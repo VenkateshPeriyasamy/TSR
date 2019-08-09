@@ -1,0 +1,10 @@
+className: 'removeTableColRightPadding',
+
+var name = $(this).closest('tr').find('.contact_name').text();
+
+
+
+
+
+
+class="dt-button buttons-selected"

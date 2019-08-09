@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>RCAMSAR</title>
+<link rel="icon" type="image/png" href="images/favicon.png" sizes="16x19"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+
+<style type="text/css">
+.tsr_gallery .item{
+  margin: 3px;
+}
+.tsr_gallery .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.tsr_gallery.owl-theme .owl-controls {
+  margin: 30px 0 0;
+}
+header .header-left {
+    float: left;
+    padding: 25px 0 10px 18px;
+    background: #fff;
+    position: relative;
+    width: 46%;
+    z-index: 22;
+}
+.innerpage-news-col:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 23px;
+    width: 1px;
+    height: 107%;
+    background: #d4d9da;
+}
+iframe 
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+iframe.active 
+{
+  z-index: 10;
+
+}
+iframe .breadcrumb li:nth-child(3)
+{
+  display: none;
+}
+.rcamasr-land-faq-link
+{
+  color: #000;
+}
+.rcamasr-land-faq-link:hover
+{
+  color: #000;
+  text-decoration: underline;
+}
+.innerpage-news-wrap .inner-news .date-wrap .inner-news-date
+{
+  padding: 43px 18px !important;
+}
+</style>
+
+</head>
+<body>
+<div class="master-preloader"></div>
+<section id="wrapper">
+  <header class="hidden-sm hidden-xs">
+    <div class="header-left">
+      <div class="logo"><a href="/index"><img src="images/logo.png"></a></div>
+      <div class="dept-pages">
+        <ul class="dept-pages-list">
+          <li><a href="/tsr"><img src="images/tsr-logo.png"><p>T.S.RAHAMAN</p></a></li>
+          <li><a href="/rcamsar"><img src="images/rcamcr-logo.jpg"><p>RCAMSAR</p></a></li>
+          <li><a href="/aracah"><img src="images/arach-logo.jpg"><p>ARACAMH</p></a></li>
+          <li><a href="http://www.lkmschool.in/" target="_blank"><img src="images/lkm-logo.jpg"><p>LKM School</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-right">
+        <div class="head-right-top">
+            <div class="bookings">
+              <ul>
+               <li><a href="http://live.ipms247.com/booking/docs/hostelbooking/book.php"  class="btn-white-book" target="_blank">BOOK ROOM</a></li>
+        <!-- <li>
+                  <a href="http://59.185.107.58/tsr/selectcoursecategory.aspx" target="_blank" class="btn-white-book">BOOK COURSE ONLINE</a>
+                </li> -->
+                <li>
+                  <a href="http://183.87.148.62:7274/application/index" class="btn-white-book" target="_blank">BOOK COURSE ONLINE</a>
+                </li>
+              </ul>
+            </div>
+            <div class="head-social">
+              <h4>Follow Us</h4>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            <!--  <div class="alumni"><li><a href="/alumni" class="btn-white-book">ALUMNI</a></li> 
+           </div>-->
+        </div>
+        <div class="head-right-bottom">
+            <nav>
+              <ul>
+                <li><a href="/index">HOME</a></li>
+                <li><a href="/about">ABOUT US</a></li>
+                <li><a href="/faculty">FACULTY</a></li>
+                <li><a href="/gallery">GALLERY</a></li>
+                <li><a href="/contact">CONTACT US</a></li>
+              </ul>
+            </nav>
+            <div class="head-search">
+                <form class="search">
+                    <input type="text" class="search-input">
+                    <input type="submit" class="search-submit">
+                    <span></span>
+                </form>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!--mblheader-->
+  <div class="mbl-header hidden-md hidden-lg">
+    <div class="header-left">
+      <div class="logo"><a href="/index"><img src="images/logo.png"></a></div>
+    </div>
+    <div class="header-right">
+      <div class="menu-click"><img src="images/menu-icon.png"></div>
+    </div>
+    <div class="bookings">
+      <ul>
+        <li><a href="javascript:;"  class="btn-white-book not-click-pop" title="Hostel booking can be done when coming for the course">BOOK ROOM</a></li>
+        <!-- <li>
+                  <a href="http://59.185.107.58/tsr/selectcoursecategory.aspx" target="_blank" class="btn-white-book">BOOK COURSE ONLINE</a>
+                </li> -->
+                <li>
+                  <a href="http://183.87.148.62:7274/application/index" class="btn-white-book" target="_blank">BOOK COURSE ONLINE</a>
+                </li>
+      </ul>
+      <div class="head-search">
+          <form class="search">
+              <input type="text" class="search-input">
+              <input type="submit" class="search-submit">
+              <span></span>
+          </form>
+      </div>
+    </div>
+  </div>
+  <!--mbl-head-end-->
+  <div class="mbl-menu hidden-md hidden-lg">
+    <div class="close-menu">X</div>
+      <ul class="dept-pages-list">
+          <li><a href="/tsr" title="TRAINING SHIP RAHAMAN"><img src="images/tsr-logo.png"><p>TSR</p></a></li>
+          <li><a href="/rcamsar" title="RAHAMAN COLLEGE OF ADVANCED MARITIME STUDIES & RESEARCH"><img src="images/rcamcr-logo.jpg"><p>RCAMSAR</p></a></li>
+          <li><a href="/aracah" title="ABDUL RASHID ACADEMY OF CULINARY ARTS & MARITIME HOSPITALITY"><img src="images/arach-logo.jpg"><p>ARACAMH</p></a></li>
+          <li><a href="http://www.lkmschool.in/" target="_blank" title="LKM School"><img src="images/lkm-logo.jpg"><p>LKM School</p></a></li>
+        </ul>
+        <div class="mbl-nav">
+          <ul>
+                <li><a href="/index">HOME</a></li>
+                <li><a href="/about">ABOUT US</a></li>
+                <li><a href="/faculty">FACULTY</a></li>
+                <li><a href="/gallery">GALLERY</a></li>
+                <li><a href="/contact">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="mbl-social">
+          <ul>
+              <li><a href="#"><img src="images/mbl-fb-icon.png"></a></li>
+              <li><a href="#"><img src="images/mbl-twitter-icon.png"></a></li>
+              <li><a href="#"><img src="images/mbl-gplus-icon.png"></a></li>
+          </ul>
+        </div>
+  </div>
+
+  <section class="banner-rcamsar-inner">
+  <div class="certified"><h5><img src="images/badge.png"><p class="text-center">ISO<br/>9001:2008<br/>Certified</p></h5></div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
+      </ol>
+      <div class="carousel-inner text-uppercase" role="listbox">
+        <div class="item active banner-img1">
+        </div>
+        <div class="item banner-img2"> 
+        </div>
+        <div class="item banner-img3">
+        </div>
+        <div class="item banner-img4"> 
+        </div>
+        <!--div class="item banner-img5"> 
+          <div class="container">
+        </div>
+      </div-->
+    </div>
+  </section>
+  <div class="container bg-white breadcrumb-wrap">
+    <div class="row">
+      <ul class="breadcrumb">
+        <li><a href="/index"><img src="images/breadcrumb_home.png" width="19" height="15"  alt=""/></a></li>
+        <li class="active">RCAMSAR</li>
+      </ul>
+    </div>
+  </div>
+  <section class="inner-pre-courses container pos-rel">
+      <div class="inner-title-wrap">
+        <h2 class="inner-title">RAHAMAN COLLEGE OF ADVANCED <br/>MARITIME STUDIES & RESEARCH</h2>
+         <h2 class="inner-title">RCAMSAR</h2>
+      </div>
+    <section class="inner-pre-wrap col-lg-3 col-md-3">
+     <h1 class="text-uppercase"><img src="images/special-link-icon.png">SPECIAL LINKS</h1>
+      <div class="tabbable tabs-left">
+        <ul class="nav nav-tabs text-uppercase">
+          <li class="parallelogram-tab pre-course-tab"><a href="/rcamsar_alumni"><span class="alumni-icon">Alumni</span></a></li>
+          <li class="parallelogram-tab pre-course-tab"><a href="/rcamsar_gallery"><span class="gallery-icon">GALLERY</span></a></li>
+          <li class="parallelogram-tab pre-course-tab"><a href="/contact"><span class="contact-icon">Contact Us</span></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="col-lg-9 col-md-9">
+      <div class="inner-section-border">
+      <section class="col-lg-7 col-md-7 inner-rcamsar-col innerpage-news-col">
+        <h1 class="text-uppercase"><img src="images/inner-news-icon.png">news & events</h1>
+        <div id="innerpage-news-slider">
+          <div class="innerpage-news-wrap item">
+              <div class="inner-news">
+                <div class="date-wrap"><span class="inner-news-date"><b>Month</b><br/>Date</span></div>
+                <div class="inner-news-info">
+                  <h6>News</h6>
+                  <p>Coming Soon</p>
+                  <a href="/news_events" class="read-more-news-btn">read more</a>
+                </div>
+              </div>
+              <div class="inner-news">
+                <div class="date-wrap"><span class="inner-news-date"><b>Month</b><br/>Date</span></div>
+                <div class="inner-news-info">
+                  <h6>News</h6>
+                  <p>Coming Soon</p>
+                  <a href="/news_events" class="read-more-news-btn">read more</a>
+                </div>
+              </div>
+          </div>
+          <div class="innerpage-news-wrap item">
+              <div class="inner-news">
+                <div class="date-wrap"><span class="inner-news-date"><b>Month</b><br/>Date</span></div>
+                <div class="inner-news-info">
+                  <h6>News</h6>
+                  <p>Coming Soon</p>
+                  <a href="/news_events" class="read-more-news-btn">read more</a>
+                </div>
+              </div>
+              <div class="inner-news">
+                <div class="date-wrap"><span class="inner-news-date"><b>Month</b><br/>Date</span></div>
+                <div class="inner-news-info">
+                  <h6>News</h6>
+                  <p>Coming Soon</p>
+                  <a href="/news_events" class="read-more-news-btn">read more</a>
+                </div>
+              </div>
+          </div>
+          </div>
+      </section>
+      <section class="col-lg-5 col-md-5 inner-courses-detail inner-rcamsar-border">
+        <h1 class="text-uppercase"><img src="images/inner-course-icon.png">courses</h1>
+        <div class="inner-precourse-list">
+          <h6>Presea Courses</h6>
+          <ul>
+            <li><a href="/courses/tsr_gme" class="gme-click">GRADUATE MECHANICAL ENGINEERING(GME)</a></li>
+          </ul>
+        </div>
+        <div class="inner-postcourse-list">
+          <h6>Fire Fighting Courses</h6>
+          <ul>
+            <li><a href="/courses/tsr_fpff">Fire Fighting and Fire Prevention Course (FPFF)</a></li>
+            <li><a href="/courses/tsr_aff">ADVANCE FIRE FIGHTING COURSE(AFF)</a></li>
+            <li><a href="/courses/tsr_fpff_ref">REFRESHER COURSE FOR FIRE PREVENTION &<br/>
+FIRE FIGHTING(FPFF-REF)</a></li>
+            <li><a href="/courses/tsr_aff_ref">REFRESHER COURSE in ADVANCE FIRE FIGHTING. (AFF-REF)</a></li>
+          </ul>
+        </div>
+        <div class="inner-postcourse-list">
+          <h6>Engineering Modular Courses</h6>
+          <ul>
+            <li><a href="/courses/tsr_tasco">ADVANCE TRAINING FOR OIL TANKER CARGO OPERATIONS (TASCO)</a></li>
+            <li><a href="/courses/tsr_meocliipreparatorycourse">MEO CL II PREPARATORY COURSE</a></li>
+            <li><a href="/courses/tsr_meoclivpreparatorycourse">MEO CL IV PREPARATORY COURSE</a></li>
+            <li><a href="/courses/rutc">REFRESHER AND UPDATING TRAINING COURSE FOR ENGINEER OFFICERS<br/>(Operational and Management level) for STCW 2010</a></li>
+          </ul>
+        </div>
+      </section>
+      </div>
+
+      <div class="inner-gallery inner-section-border">
+          <h4 class="inner-header"><img src="images/inner-gallery-icon.png">GALLERY</h4>
+          <div class="tsr_gallery">
+                     <!-- <div class="item"><img src="images/rcamsar-gallery1.jpg"></div>-->
+                      <div class="item"><img src="images/rcamsar-gallery2.jpg"></div>
+                      <div class="item"><img src="images/rcamsar-gallery3.jpg"></div>
+                      <div class="item"><img src="images/rcamsar-gallery4.jpg"></div>
+                      <div class="item"><img src="images/rcamsar-gallery5.jpg"></div>
+                      <div class="item"><img src="images/rcamsar-gallery6.jpg"></div>
+                      <div class="item"><img src="images/rcamsar-gallery7.jpg"></div>
+                      <div class="item"><img src="images/rcamsar-gallery8.jpg"></div>
+                       <div class="item"><img src="images/rcamsar-gallery9.jpg"></div>
+                      
+          </div>
+          <p class="text-uppercase text-center news-read-more"><a href="/rcamsar_gallery" class="btn-green margin-btm-30"><span>more</span></a></p>
+      </div>
+      <div class="faq-inner">
+          <h4 class="inner-header inner-faq"><img src="images/faq-title-inner-icon.png">FREQUENTLY ASKED QUESTIONS</h4>
+          <h4 class="inner-header mbl-inner-faq"><img src="images/faq-title-inner-icon.png">FAQ's</h4>
+            <section class="inner-pre-courses pos-rel">
+    <section class="inner-pre-wrap">
+      <div class="tabbable tabs-left">
+        <div class="tab-content">
+          <div class="tab-pane active" id="ccimc">
+            <div class="panel-group" id="nested1">
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#nested1" href="#tsrAccor1">Is daily transport is available from CBD belapur railway station?</a></h4>
+                </div>
+                <div id="tsrAccor1" class="panel-collapse collapse">
+                  <div class="panel-body inner-section-border">
+                    <ul>
+                      <li>Yes, daily transport is available.</li>
+                      <li>Bus starts at 0730 hrs from Belapur for T S Rahaman and leaves at 1730 hrs from T S Rahaman for Belapur.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+               <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#nested1" href="#tsrAccor11">What is IMU?</a></h4>
+                </div>
+                <div id="tsrAccor11" class="panel-collapse collapse">
+                  <div class="panel-body inner-section-border">
+                    <ul>
+                     <li>The IMU or Indian Maritime University was formed by an Act of Parliament; the headquarters of the University is at Chennai with its campuses at Mumbai, Kolkata Chennai and Vishakhapatnam. Further information about IMU can be obtained from their website
+                     <a href="http://www.imu.edu.in/" target="_blank" class="rcamasr-land-faq-link">www.imu.tn.nic.in</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+               <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a class="collapsed" data-toggle="collapse" data-parent="#nested1" href="#tsrAccor112">What is Merchant Navy?</a></h4>
+                </div>
+                <div id="tsrAccor112" class="panel-collapse collapse">
+                  <div class="panel-body inner-section-border">
+                    <ul>
+                     <li>Merchant Ships that carry goods, people or render services of a non military nature constitute the merchant navy.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p class="text-uppercase text-center news-read-more"><a href="/rcamsar_alumni?rcamsarSub=rcamsar-alumni" class="btn-green margin-faq-btn"><span>more</span></a></p>
+        </div>
+      </div>
+      
+    </section>
+  </section>
+
+      </div>
+    </section>
+  </section>
+ <section class="footer-warp footer-warp-home">
+    <div class="footer-full home-footer-full">
+        <div class="foot-bg-wrap">
+          <div class="container">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-details5">
+            <h1>Newsletter Signup</h1>
+            <p class="parallelogram-input">
+              <input type="text"/>
+            </p>
+            <p class="text-uppercase btn-signup"><a href="#" class="btn-green btn-white"><span>sign up</span></a></p>
+            <hr>
+            <h5>Social Network</h5>
+            <ul class="foo-social-group">
+              <li><a href="#" class=""></a></li>
+              <li><a href="#" class=""></a></li>
+              <li><a href="#" class=""></a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-details6">
+            <h1>Site Map</h1>
+            <ul>
+              <li><a href="/index">Home</a></li>
+              <li><a href="/about">About us</a></li>
+              <li><a href="/faculty">Faculty</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/contact">Contact us</a></li>
+            </ul>
+            <img src="images/foot-logo.png">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-details7">
+            <h1>For an Enquiry</h1>
+            <p class="parallelogram-input">
+              <select class="select-foot">
+                  <option selected="selected" hidden>Select</option>
+                  <option>Pre Sea (Nautical)</option>
+                  <option>Post Sea (STCW)</option>
+                  <option>ARACAMH</option>
+                  <option>RCAMSAR</option>
+              </select>
+            </p>
+            <p class="parallelogram-input">
+              <input type="text" placeholder="Name">
+            </p>
+            <p class="parallelogram-input">
+              <input type="text" placeholder="Email">
+            </p>
+            <p class="parallelogram-input">
+              <input type="text" placeholder="Phone">
+            </p>
+            <p class="parallelogram-input">
+              <textarea type="text" placeholder="Message"></textarea>
+            </p>
+            <p class="text-uppercase btn-signup"><a href="#" class="btn-green btn-white"><span>contact us</span></a></p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-address">
+            <h1>Contact</h1>
+            <ul>
+              <li><strong>T.S. Rahaman Campus - Nhava</strong></li>
+              <li>Nhava, Panvel, Raigarh, </li>
+              <li>Maharashtra 410206, India</li>
+            </ul>
+            <a href="pdf/policy.pdf" class="cancel-policy" target="_blank">Cancellation Policy PDF</a>
+            <ul>
+              <li><strong>Training Ship Rahaman<br/>
+Sir Mohamed Yusuf Seamen Welfare Foundation</strong></li>
+              <li>Jahaz Mahal Annexe, 170 K, Samander Point Estate,<br/>
+              Opp.Lotus, Worli,<br/> Mumbai – 400 018.</li>
+              <li>Contact:<br/> 
+<a href="callto:022-24933324">022-24933324 ,</a><a href="callto:022-24938740"> 24938740</a></li>
+<li>Email: <a href='mailto:booking@tsrahaman.org'>booking@tsrahaman.org</a></li>
+            </ul>
+            <h1>National Anti ragging</h1>
+            <ul class="foot-addr">
+                <li>1800-180-552 (24 x 7 Toll Free)</li>
+                <li><a href="mailto:helpline@antiragging.in">helpline@antiragging.in</a></li>
+                <li><a href="http://www.ugc.ac.in" target="_blank">www.ugc.ac.in</a></li>
+                <li><a href="http://www.antiragging.in" target="_blank">www.antiragging.in</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer">
+      <p class="text-center">&copy; 2015 T S Rahaman  |  All Rights Reserved.</p>
+    </div>
+  </section>
+</section>
+  <div class="pop-not-click">
+    <div class="pop-cont">
+      <div class="pop-close">X</div>
+      <div class="pop-event-cont">
+        <h1>Hostel Booking</h1>
+        <article>Hostel booking can be done when coming for the course.</article>
+      </div>
+    </div>
+  </div>
+<script src="js/jquery-1.11.3.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/jquery.dlmenu.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/main.js"></script> 
+<script type="text/javascript">
+ sessionStorage.setItem("username","");
+</script>
+<script>
+$(document).ready(function() {
+$('#myCarousel').carousel({
+      interval: 2000
+    });
+	//$('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-tabs'});
+
+  $(".tsr_gallery").owlCarousel({
+ 
+      //autoPlay: 3000, //Set AutoPlay to 3 seconds 
+      navigation : true,
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+  $('#innerpage-news-slider').owlCarousel({
+    navigation : true,
+    items : 1,
+    itemsDesktop : [1199,1],
+      itemsDesktopSmall : [979,1]
+  });
+ 
+
+	(function($) {
+
+	 "use strict"
+	 // Accordion Toggle Items
+
+	   var iconOpen = 'fa fa-minus',
+
+			iconClose = 'fa fa-plus';
+
+		$(document).on('show.bs.collapse hide.bs.collapse', '.accordion', function (e) {
+
+			var $target = $(e.target)
+
+			  $target.siblings('.accordion-heading')
+
+			  .find('em').toggleClass(iconOpen + ' ' + iconClose);
+
+			  if(e.type == 'show')
+
+				  $target.prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+
+			  if(e.type == 'hide')
+
+				  $(this).find('.accordion-toggle').not($target).removeClass('active');
+
+		});
+
+		
+
+	})(jQuery);
+
+  var QueryString = function() {
+         // This function is anonymous, is executed immediately and 
+         // the return value is assigned to QueryString!
+         var query_string = {};
+         var query = window.location.search.substring(1);
+         var vars = query.split("&");
+         for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+                // If first entry with this name
+            if (typeof query_string[pair[0]] === "undefined") {
+             query_string[pair[0]] = decodeURIComponent(pair[1]);
+                // If second entry with this name
+            } else if (typeof query_string[pair[0]] === "string") {
+             var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+             query_string[pair[0]] = arr;
+                // If third or later entry with this name
+            } else {
+             query_string[pair[0]].push(decodeURIComponent(pair[1]));
+            }
+         } 
+            return query_string;
+        }();
+
+    switch(QueryString.tsrcourse) {
+        case "cater-pre-1":
+            $(".parallelogram-tab").eq(0).find("a").click();
+            break;
+        case "cater-pre-2":
+        $(".parallelogram-tab").eq(1).find("a").click();
+        break;
+        case "cater-pre-3":
+        $(".parallelogram-tab").eq(2).find("a").click();
+        break;		 
+        default:
+            //default code block
+    }
+});
+</script>
+</body>
+</html>

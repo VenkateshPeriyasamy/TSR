@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>TSR News And Events</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x19" />
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/marquee.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <!-- Owl Carousel Assets -->
+  <link href="css/owl.carousel.css" rel="stylesheet" />
+  <link href="css/owl.theme.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
+  <script src="js/modernizr.custom.js"></script>
+  <style type="text/css">
+    header .header-left {
+      float: left;
+      padding: 25px 0 10px 18px;
+      background: #fff;
+      position: relative;
+      width: 46%;
+      z-index: 22;
+    }
+
+    .news-events-cont1 .event-date,
+    .news-events-tsr .news-events-fullbg .news-events-wrap1 .news-events-cont2 .event-date,
+    .news-events-tsr .news-events-fullbg .news-events-wrap2 .news-events-cont2 .event-date {
+      font-size: 14px !important;
+      padding: 25px 28px !important;
+    }
+
+    .news-events-cont1 .event-date span,
+    .news-events-tsr .news-events-fullbg .news-events-wrap1 .news-events-cont2 .event-date span,
+    .news-events-tsr .news-events-fullbg .news-events-wrap2 .news-events-cont2 .event-date span {
+      font-size: 12px !important;
+    }
+
+    .pop-warp .pop-cont .pop-event-cont .event-date,
+    .pop-warp1 .pop-cont .pop-event-cont .event-date,
+    .pop-warp2 .pop-cont .pop-event-cont .event-date,
+    .pop-warp3 .pop-cont .pop-event-cont .event-date,
+    .pop-warp4 .pop-cont .pop-event-cont .event-date,
+    .pop-warp5 .pop-cont .pop-event-cont .event-date,
+    .pop-warp6 .pop-cont .pop-event-cont .event-date,
+    .pop-warp-news-1 .pop-cont .pop-event-cont .event-date,
+    .pop-warp-news-2 .pop-cont .pop-event-cont .event-date,
+    .pop-warp-news-3 .pop-cont .pop-event-cont .event-date,
+    .pop-warp-news-4 .pop-cont .pop-event-cont .event-date,
+    .pop-warp-news-5 .pop-cont .pop-event-cont .event-date,
+    .pop-warp-news-6 .pop-cont .pop-event-cont .event-date,
+    .pop-warp-events-1 .pop-cont .pop-event-cont .event-date,
+    .pop-warp-events-2 .pop-cont .pop-event-cont .event-date,
+    .pop-warp-events-3 .pop-cont .pop-event-cont .event-date,
+    .pop-faculty-1 .pop-cont .pop-event-cont .event-date,
+    .pop-faculty-2 .pop-cont .pop-event-cont .event-date,
+    .pop-facility-warp1 .pop-cont .pop-event-cont .event-date,
+    .pop-facility-warp2 .pop-cont .pop-event-cont .event-date,
+    .pop-facility-warp3 .pop-cont .pop-event-cont .event-date,
+    .pop-facility-warp4 .pop-cont .pop-event-cont .event-date,
+    .pop-facility-warp5 .pop-cont .pop-event-cont .event-date,
+    .pop-facility-warp6 .pop-cont .pop-event-cont .event-date,
+    .pop-facility-warp7 .pop-cont .pop-event-cont .event-date,
+    .pop-facility-warp8 .pop-cont .pop-event-cont .event-date {
+      font-size: 13px !important;
+      padding: 25px 28px !important;
+    }
+
+    .pop-warp .pop-cont .pop-event-cont .event-date span,
+    .pop-warp1 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp2 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp3 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp4 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp5 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp6 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp-news-1 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp-news-2 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp-news-3 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp-news-4 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp-news-5 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp-news-6 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp-events-1 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp-events-2 .pop-cont .pop-event-cont .event-date span,
+    .pop-warp-events-3 .pop-cont .pop-event-cont .event-date span,
+    .pop-faculty-1 .pop-cont .pop-event-cont .event-date span,
+    .pop-faculty-2 .pop-cont .pop-event-cont .event-date span,
+    .pop-facility-warp1 .pop-cont .pop-event-cont .event-date span,
+    .pop-facility-warp2 .pop-cont .pop-event-cont .event-date span,
+    .pop-facility-warp3 .pop-cont .pop-event-cont .event-date span,
+    .pop-facility-warp4 .pop-cont .pop-event-cont .event-date span,
+    .pop-facility-warp5 .pop-cont .pop-event-cont .event-date span,
+    .pop-facility-warp6 .pop-cont .pop-event-cont .event-date span,
+    .pop-facility-warp7 .pop-cont .pop-event-cont .event-date span,
+    .pop-facility-warp8 .pop-cont .pop-event-cont .event-date span {
+      font-size: 12px !important;
+    }
+
+    .events-hide-cra li {
+      width: 33.1% !important;
+    }
+
+    bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="master-preloader"></div>
+  <section id="wrapper">
+    <header class="hidden-sm hidden-xs">
+      <div class="header-left">
+        <div class="logo"><a href="/index"><img src="images/logo.png"></a></div>
+        <div class="dept-pages">
+          <ul class="dept-pages-list">
+            <li><a href="/tsr"><img src="images/tsr-logo.png">
+                <p>T.S.RAHAMAN</p>
+              </a></li>
+            <li><a href="/rcamsar"><img src="images/rcamcr-logo.jpg">
+                <p>RCAMSAR</p>
+              </a></li>
+            <li><a href="/aracah"><img src="images/arach-logo.jpg">
+                <p>ARACAMH</p>
+              </a></li>
+            <li><a href="http://www.lkmschool.in/" target="_blank"><img src="images/lkm-logo.jpg">
+                <p>LKM School</p>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="head-right-top">
+          <div class="bookings">
+            <ul>
+              <li><a href="javascript:;" class="btn-white-book not-click-pop" target="_blank">BOOK ROOM</a></li>
+              <!-- <li>
+                  <a href="http://59.185.107.58/tsr/selectcoursecategory.aspx" target="_blank" class="btn-white-book">BOOK COURSE ONLINE</a>
+                </li> -->
+              <li>
+                <a href="http://183.87.148.62:7274/application/index" class="btn-white-book" target="_blank">BOOK
+                  COURSE ONLINE</a>
+              </li>
+            </ul>
+          </div>
+          <div class="head-social">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="head-right-bottom">
+          <nav>
+            <ul>
+              <li><a href="/index">HOME</a></li>
+              <li><a href="/about">ABOUT US</a></li>
+              <li><a href="/faculty">FACULTY</a></li>
+              <li><a href="/gallery">GALLERY</a></li>
+              <li><a href="/contact">CONTACT US</a></li>
+            </ul>
+          </nav>
+          <div class="head-search">
+            <form class="search">
+              <input type="text" class="search-input">
+              <input type="submit" class="search-submit">
+              <span></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--mblheader-->
+    <div class="mbl-header hidden-md hidden-lg">
+      <div class="header-left">
+        <div class="logo"><a href="/index"><img src="images/logo.png"></a></div>
+      </div>
+      <div class="header-right">
+        <div class="menu-click"><img src="images/menu-icon.png"></div>
+      </div>
+      <div class="bookings">
+        <ul>
+          <li><a href="http://live.ipms247.com/booking/docs/hostelbooking/book.php" class="btn-white-book" title="_blank">BOOK
+              ROOM</a></li>
+          <!-- <li>
+                  <a href="http://59.185.107.58/tsr/selectcoursecategory.aspx" target="_blank" class="btn-white-book">BOOK COURSE ONLINE</a>
+                </li> -->
+          <li>
+            <a href="http://183.87.148.62:7274/application/index" class="btn-white-book" target="_blank">BOOK COURSE
+              ONLINE</a>
+          </li>
+        </ul>
+        <div class="head-search">
+          <form class="search">
+            <input type="text" class="search-input">
+            <input type="submit" class="search-submit">
+            <span></span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--mbl-head-end-->
+    <div class="mbl-menu hidden-md hidden-lg">
+      <div class="close-menu">X</div>
+      <ul class="dept-pages-list">
+        <li><a href="/tsr" title="TRAINING SHIP RAHAMAN"><img src="images/tsr-logo.png">
+            <p>TSR</p>
+          </a></li>
+        <li><a href="/rcamsar" title="RAHAMAN COLLEGE OF ADVANCED MARITIME STUDIES & RESEARCH"><img src="images/rcamcr-logo.jpg">
+            <p>RCAMSAR</p>
+          </a></li>
+        <li><a href="/aracah" title="ABDUL RASHID ACADEMY OF CULINARY ARTS & MARITIME HOSPITALITY"><img src="images/arach-logo.jpg">
+            <p>ARACAMH</p>
+          </a></li>
+        <li><a href="http://www.lkmschool.in/" target="_blank" title="LKM School"><img src="images/lkm-logo.jpg">
+            <p>LKM School</p>
+          </a></li>
+      </ul>
+      <div class="mbl-nav">
+        <ul>
+          <li><a href="/index">HOME</a></li>
+          <li><a href="/about">ABOUT US</a></li>
+          <li><a href="/faculty">FACULTY</a></li>
+          <li><a href="/gallery">GALLERY</a></li>
+          <li><a href="/contact">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="mbl-social">
+        <ul>
+          <li><a href="#"><img src="images/mbl-fb-icon.png"></a></li>
+          <li><a href="#"><img src="images/mbl-twitter-icon.png"></a></li>
+          <li><a href="#"><img src="images/mbl-gplus-icon.png"></a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="banner-inner banner-inner-news banner-news">
+      <div class="certified">
+        <h5><img src="images/badge.png">
+          <p class="text-center">ISO<br />9001:2008<br />Certified</p>
+        </h5>
+      </div>
+    </section>
+
+    <!--flash news-->
+    <section class="flash-wrap" style="margin-top: 0;">
+      <div class="container bg-white">
+        <div class="status marquee-container">
+          <div class="bg-status marquee-sibling">
+            <p class="status-text text-uppercase"><a href="news_events.html">
+                Flash News</a></p>
+          </div>
+          <div class="marquee">
+            <div class="marquee-content-items">
+              <p> ** <bold>DNS cadets & GP Ratings:</bold> DNS cadets and GP Ratings for July batch. ** <bold>GMDSS
+                  BOOKING:</bold> FOR GMDSS BOOKING PLEASE CONTACT -02227212834. ** <bold>GP Rating Course:</bold> FOR
+                GP Rating Course BOOKING PLEASE CONTACT -02227212828 ,02227212873. ** <bold>CCMC Course:</bold> FOR
+                CCMC Course BOOKING PLEASE CONTACT -02227212828 ,02227212923. ** <bold>DNS Course:</bold> FOR DNS
+                Course BOOKING PLEASE CONTACT -91-8879967737. <bold>CCMC 1st Merit List:</bold> Last date for
+                submission of documents: 15 th Nov 2018.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container breadcrumb-wrap bg-white">
+      <div class="row">
+        <ul class="breadcrumb">
+          <li><a href="/index"><img src="images/breadcrumb_home.png" width="19" height="15" alt="" /></a></li>
+          <li class="active">News &amp; Events</li>
+        </ul>
+      </div>
+    </div>
+    <section class="inner-news-wrap">
+      <div class="container bg-white">
+        <section class="courses-tsr inner-courses pos-rel depart-gallery">
+
+          <div class="inner-title-wrap">
+            <h2 class="inner-title">Latest Updates</h2>
+          </div>
+          <div class="">
+            <div class="filters-button-group">
+              <ul class="button-group button-gallery text-uppercase events-hide-cra">
+                <li class="button button-main is-checked" data-filter="*"><span>All latest updates</span></li>
+                <li class="button button-main" data-filter=".news"><span>news</span></li>
+                <li class="button button-main" data-filter=".event"><span>events</span></li>
+              </ul>
+            </div>
+            <select class="button-group filters-select text-uppercase events-hide-cra-select">
+              <option class="button is-checked" value=":not(.transition)">All latest updates</option>
+              <option class="button" value=".news">news</option>
+              <option class="button" value=".event">events</option>
+
+            </select>
+            <div class="grid grid-main" style="position: relative; height: 1776px;">
+              <div class="news-events-inner-wrap">
+                <!-- <div class="news-events-cont1 element-item-news news">
+            <p class="event-date">Month<span>Date</span></p>
+            <div class="event-details">
+              <h1>News</h1>
+               <span class="tooltip-info news-clr">News</span>
+               <article>Coming Soon</article>
+              <p><a href="javascript:;" class="news-click-1" target="_blank">READ MORE</a></p>
+            </div>
+          </div> -->
+                <!--  <div class="news-events-cont1 element-item-news news">
+            <p class="event-date">Nov<span>17</span></p>
+            <div class="event-details">
+              <h1>CERTIFICATE COURSE IN MARITIME CATERING
+        SECOND MERIT LIST<br/></h1>
+              <span class="tooltip-info news-clr">News</span>
+               <article></article>
+              <p><a href="pdf/course/presea/BSC IN MARITIME HOSPITALITY Prospectus REV 07 APRIL 2016(1).pdf" target="_blank">DOWNLOAD PDF</a></p>
+              <p><a href="pdf/ccmc_result.pdf" target="_blank">READ MORE</a></p>
+            </div>
+          </div> -->
+                <!-- cra july -->
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Dec<span>18</span></p>
+                  <div class="event-details">
+                    <h1>CAMPUS ROUND ABOUT<br/> DECEMBER 2018</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/CRA DECEMBER 2018.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                  </div>
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Nov<span>18</span></p>
+                  <div class="event-details">
+                    <h1>CAMPUS ROUND ABOUT<br/> NOVEMBER 2018</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/CRA NOV 2018.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <!-- <div class="news-events-cont1 element-item-news news">
+                  <p class="event-date">Oct<span>18</span></p>
+                  <div class="event-details">
+                    <h1>1st Merit List</h1>
+                    <span class="tooltip-info news-clr">News</span>
+                    <article>CCMC Batch No. 26</article>
+                    <p><a href="pdf/meritlist18.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div> -->
+                <div class="news-events-cont1 element-item-news event">
+                    <p class="event-date">Oct<span>18</span></p>
+                    <div class="event-details">
+                      <h1>CAMPUS ROUND ABOUT<br />OCTOBER 2018</h1>
+                      <span class="tooltip-info event-clr">Event</span>
+                      <article></article>
+                      <p><a href="pdf/cra_oct_18.pdf" class="" target="_blank">READ MORE</a></p>
+                    </div>
+                  </div>
+                <!-- <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Sep<span>18</span></p>
+                  <div class="event-details">
+                    <h1>CAMPUS ROUND ABOUT<br />SEPTEMBER 2018</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/CRA SEPTEMBER 2018-min.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div> -->
+                <!-- <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Aug<span>18</span></p>
+                  <div class="event-details">
+                    <h1>CAMPUS ROUND ABOUT<br />AUGUST 2018</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/CRA AUG 2018.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Jul<span>18</span></p>
+                  <div class="event-details">
+                    <h1>CAMPUS ROUND ABOUT<br />JULY 2018</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/campus_round_about_july_2018.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news news">
+                  <p class="event-date">Jun<span>18</span></p>
+                  <div class="event-details">
+                    <h1>DNS cadets Batch No.18</h1>
+                    <span class="tooltip-info news-clr">News</span>
+                    <article></article>
+                    <p><a href="pdf/DNS_Cadets_B _No.18.pdf" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news news">
+                  <p class="event-date">Jun<span>18</span></p>
+                  <div class="event-details">
+                    <h1>GP Ratings for July batch</h1>
+                    <span class="tooltip-info news-clr">News</span>
+                    <article></article>
+                    <p><a href="pdf/GP_Ratings_Batch_No._61.pdf" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                cra may
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Jun<span>18</span></p>
+                  <div class="event-details">
+                    <h1>CAMPUS ROUND ABOUT<br />JUNE 2018</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/CRA JUNE 2018.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                cra feb
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">May<span>18</span></p>
+                  <div class="event-details">
+                    <h1>First Merit List of CCMC Batch 25 </h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/results/Merit _List_ of_ CCMC.pdf">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Mar<span>18</span></p>
+                  <div class="event-details">
+                    <h1>CAMPUS ROUND ABOUT<br /> MAR 2018</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/CAMPUS_ROUND_ABOUT_MARCH_2018.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                republic
+                 <div class="news-events-cont1 element-item-news event">
+          <p class="event-date">Jan<span>18</span></p>
+            <div class="event-details">
+              <h1>TSR REPUBLIC DAY PARADE 26 JAN 2018</h1>
+              <span class="tooltip-info news-clr">Video</span>
+              <article></article>
+              <p><a class="venobox" data-type="iframe" href="videos/republic_video.mp4">SEE VIDEO</a></p>
+            </div>
+        </div>
+                cra feb
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Feb<span>18</span></p>
+                  <div class="event-details">
+                    <h1>CAMPUS ROUND ABOUT<br /> FEB 2018</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/CAMPUS ROUND ABOUT FEB 2018.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                cra jan
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Jan<span>18</span></p>
+                  <div class="event-details">
+                    <h1>CAMPUS ROUND ABOUT<br /> JAN 2018</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/CAMPUS ROUND ABOUT JANUARY 2018.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                cra dec
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Dec<span>17</span></p>
+                  <div class="event-details">
+                    <h1>Campus Round about<br /> Dec 2017</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/campus_round_about_dec_2017.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                cra oct
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Oct<span>17</span></p>
+                  <div class="event-details">
+                    <h1>Campus Round about<br />Oct 2017</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article></article>
+                    <p><a href="pdf/cra_oct_17.pdf" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Month<span>Date</span></p>
+                  <div class="event-details">
+                    <h1>Events<br /></h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article>Coming Soon</article>
+                    p><a href="pdf/course/presea/BSC IN MARITIME HOSPITALITY Prospectus REV 07 APRIL 2016(1).pdf" target="_blank">DOWNLOAD PDF</a></p
+                    <p><a href="javascript:;">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news news">
+                  <p class="event-date">Month<span>Date</span></p>
+                  <div class="event-details">
+                    <h1>News</h1>
+                    <span class="tooltip-info news-clr">News</span>
+                    <article>Coming Soon</article>
+                    <p><a href="javascript:;" class="news-click-2" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news news">
+                  <p class="event-date">Month<span>Date</span></p>
+                  <div class="event-details">
+                    <h1>News</h1>
+                    <span class="tooltip-info news-clr">News</span>
+                    <article>Coming Soon</article>
+                    <p><a href="javascript:;" class="news-click-3" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news news">
+                  <p class="event-date">Month<span>Date</span></p>
+                  <div class="event-details">
+                    <h1>News</h1>
+                    <span class="tooltip-info news-clr">News</span>
+                    <article>Coming Soon</article>
+                    <p><a href="javascript:;" class="news-click-4" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Nov<span>17</span></p>
+                  <div class="event-details">
+                    <h1>Campus Round about<br /> Nov 2017</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article>&nbsp;</article>
+                    <p><a href="pdf/cra_nov_17.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news news">
+                  <p class="event-date">Month<span>Date</span></p>
+                  <div class="event-details">
+                    <h1>News</h1>
+                    <span class="tooltip-info news-clr">News</span>
+                    <article>Coming Soon</article>
+                    <p><a href="javascript:;" class="news-click-5" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Jun<span>10</span></p>
+                  <div class="event-details">
+                    <h1>BSc Entrance Exam</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article>&nbsp;</article>
+                    <p><a href="javascript:;" class="eve-click-2" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Jul<span>01</span></p>
+                  <div class="event-details">
+                    <h1>GP Rating course commence</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article>Coming Soon</article>
+                    <p><a href="javascript:;" class="eve-click-3" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Jul<span>17</span></p>
+                  <div class="event-details">
+                    <h1>BSc. (NS) Mumbai University course starts</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article>Coming Soon</article>
+                    <p><a href="javascript:;" class="eve-click-3" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news news">
+                  <p class="event-date">Month<span>Date</span></p>
+                  <div class="event-details">
+                    <h1>News</h1>
+                    <span class="tooltip-info news-clr">News</span>
+                    <article>Coming Soon</article>
+                    <p><a href="javascript:;" class="news-click-6" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news news">
+                  <p class="event-date">Month<span>Date</span></p>
+                  <div class="event-details">
+                    <h1>News</h1>
+                    <span class="tooltip-info news-clr">News</span>
+                    <article>Coming Soon</article>
+                    <p><a href="javascript:;" class="news-click-6" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news event">
+                  <p class="event-date">Sep<span>17</span></p>
+                  <div class="event-details">
+                    <h1>Campus Round about<br /> September 2017</h1>
+                    <span class="tooltip-info event-clr">Event</span>
+                    <article>&nbsp;</article>
+                    <p><a href="../pdf/campus_round_about_september_2017.pdf" class="" target="_blank">READ MORE</a></p>
+                  </div>
+                </div>
+                <div class="news-events-cont1 element-item-news event">
+            <p class="event-date">Aug<span>17</span></p>
+            <div class="event-details">
+              <h1>Campus Round about August 2017</h1>
+               <span class="tooltip-info event-clr">Event</span>
+               <article>&nbsp;</article>
+              <p><a href="../pdf/campus_round_about_august_2017_1.pdf" class="" target="_blank">READ MORE</a></p>
+            </div>-->
+
+              </div>
+
+            </div>
+          </div> 
+        </section>
+      </div>
+    </section>
+    <section class="footer-warp footer-warp-home">
+      <div class="footer-full home-footer-full">
+        <div class="foot-bg-wrap">
+          <div class="container">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-details5">
+              <h1>Newsletter Signup</h1>
+              <p class="parallelogram-input">
+                <input type="text" />
+              </p>
+              <p class="text-uppercase btn-signup"><a href="#" class="btn-green btn-white"><span>sign up</span></a></p>
+              <hr>
+              <h5>Social Network</h5>
+              <ul class="foo-social-group">
+                <li><a href="#" class=""></a></li>
+                <li><a href="#" class=""></a></li>
+                <li><a href="#" class=""></a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-details6">
+              <h1>Site Map</h1>
+              <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/about">About us</a></li>
+                <li><a href="/faculty">Faculty</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/contact">Contact us</a></li>
+              </ul>
+              <img src="images/foot-logo.png">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-details7">
+              <h1>For an Enquiry</h1>
+              <p class="parallelogram-input">
+                <select class="select-foot">
+                  <option selected="selected" hidden>Select</option>
+                  <option>Pre Sea (Nautical)</option>
+                  <option>Post Sea (STCW)</option>
+                  <option>ARACAMH</option>
+                  <option>RCAMSAR</option>
+                </select>
+              </p>
+              <p class="parallelogram-input">
+                <input type="text" placeholder="Name">
+              </p>
+              <p class="parallelogram-input">
+                <input type="text" placeholder="Email">
+              </p>
+              <p class="parallelogram-input">
+                <input type="text" placeholder="Phone">
+              </p>
+              <p class="parallelogram-input">
+                <textarea type="text" placeholder="Message"></textarea>
+              </p>
+              <p class="text-uppercase btn-signup"><a href="#" class="btn-green btn-white"><span>contact us</span></a></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-address">
+              <h1>Contact</h1>
+              <ul>
+                <li><strong>T.S. Rahaman Campus - Nhava</strong></li>
+                <li>Nhava, Panvel, Raigarh, </li>
+                <li>Maharashtra 410206, India</li>
+              </ul>
+              <a href="pdf/policy.pdf" class="cancel-policy" target="_blank">Cancellation Policy PDF</a>
+              <ul>
+                <li><strong>Training Ship Rahaman<br />
+                    Sir Mohamed Yusuf Seamen Welfare Foundation</strong></li>
+                <li>Jahaz Mahal Annexe, 170 K, Samander Point Estate,<br />
+                  Opp.Lotus, Worli,<br /> Mumbai – 400 018.</li>
+                <li>Contact:<br />
+                  <a href="callto:022-24933324">022-24933324 ,</a><a href="callto:022-24938740"> 24938740</a></li>
+                <li>Email: <a href='mailto:booking@tsrahaman.org'>booking@tsrahaman.org</a></li>
+              </ul>
+              <h1>National Anti ragging</h1>
+              <ul class="foot-addr">
+                <li>1800-180-552 (24 x 7 Toll Free)</li>
+                <li><a href="mailto:helpline@antiragging.in">helpline@antiragging.in</a></li>
+                <li><a href="http://www.ugc.ac.in" target="_blank">www.ugc.ac.in</a></li>
+                <li><a href="http://www.antiragging.in" target="_blank">www.antiragging.in</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="text-center">&copy; 2015 T S Rahaman | All Rights Reserved.</p>
+      </div>
+    </section>
+
+    <div class="pop-warp-news-1">
+      <div class="pop-cont">
+        <div class="pop-close">X</div>
+        <div class="pop-event-cont">
+          <p class="event-date">Month<span>Date</span></p>
+          <h1>NEWS</h1>
+        </div>
+        <figure><img src="http://placehold.it/600x150" width="600" height="150" alt=""></figure>
+        <article>Coming Soon</article>
+      </div>
+    </div>
+    <div class="pop-warp-news-2">
+      <div class="pop-cont">
+        <div class="pop-close">X</div>
+        <div class="pop-event-cont">
+          <p class="event-date">Month<span>Date</span></p>
+          <h1>NEWS</h1>
+        </div>
+        <figure><img src="http://placehold.it/600x150" width="600" height="150" alt=""></figure>
+        <article>Coming Soon</article>
+      </div>
+    </div>
+
+    <div class="pop-warp-news-3">
+      <div class="pop-cont">
+        <div class="pop-close">X</div>
+        <div class="pop-event-cont">
+          <p class="event-date">Month<span>Date</span></p>
+          <h1>NEWS</h1>
+        </div>
+        <figure><img src="http://placehold.it/600x150" width="600" height="150" alt=""></figure>
+        <article>Coming Soon</article>
+      </div>
+    </div>
+
+    <div class="pop-warp-news-4">
+      <div class="pop-cont">
+        <div class="pop-close">X</div>
+        <div class="pop-event-cont">
+          <p class="event-date">Month<span>Date</span></p>
+          <h1>NEWS</h1>
+        </div>
+        <figure><img src="http://placehold.it/600x150" width="600" height="150" alt=""></figure>
+        <article>Coming Soon</article>
+      </div>
+    </div>
+
+    <div class="pop-warp-news-5">
+      <div class="pop-cont">
+        <div class="pop-close">X</div>
+        <div class="pop-event-cont">
+          <p class="event-date">Month<span>Date</span></p>
+          <h1>NEWS</h1>
+        </div>
+        <figure><img src="http://placehold.it/600x150" width="600" height="150" alt=""></figure>
+        <article>Coming Soon</article>
+      </div>
+    </div>
+
+    <div class="pop-warp-news-6">
+      <div class="pop-cont">
+        <div class="pop-close">X</div>
+        <div class="pop-event-cont">
+          <p class="event-date">Month<span>Date</span></p>
+          <h1>NEWS</h1>
+        </div>
+        <figure><img src="http://placehold.it/600x150" width="600" height="150" alt=""></figure>
+        <article>Coming Soon</article>
+      </div>
+    </div>
+    <div class="pop-warp-events-1">
+      <div class="pop-cont">
+        <div class="pop-close">X</div>
+        <div class="pop-event-cont">
+          <p class="event-date">Month<span>Date</span></p>
+          <h1>IMU- CET</h1>
+        </div>
+        <figure><img src="http://placehold.it/600x150" width="600" height="150" alt=""></figure>
+        <article>Coming Soon</article>
+      </div>
+    </div>
+    <div class="pop-warp-events-2">
+      <div class="pop-cont">
+        <div class="pop-close">X</div>
+        <div class="pop-event-cont">
+          <p class="event-date">Month<span>Date</span></p>
+          <h1>BSc Entrance Exam</h1>
+        </div>
+        <figure><img src="http://placehold.it/600x150" width="600" height="150" alt=""></figure>
+        <article>Coming Soon</article>
+      </div>
+    </div>
+    <div class="pop-warp-events-3">
+      <div class="pop-cont">
+        <div class="pop-close">X</div>
+        <div class="pop-event-cont">
+          <p class="event-date">Month<span>Date</span></p>
+          <h1>GP Rating course commence</h1>
+        </div>
+        <figure><img src="http://placehold.it/600x150" width="600" height="150" alt=""></figure>
+        <article>Coming Soon</article>
+      </div>
+    </div>
+  </section>
+  <div class="pop-not-click">
+    <div class="pop-cont">
+      <div class="pop-close">X</div>
+      <div class="pop-event-cont">
+        <h1>Hostel Booking</h1>
+        <article>Hostel booking can be done when coming for the course.</article>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/isotope.pkgd.js"></script>
+  <script src="js/jquery.dlmenu.js"></script>
+  <script src="js/marquee.js"></script>
+  <script src="js/venobox.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <!-- Demo -->
+
+  <script>
+    $(function () {
+      createMarquee({});
+    });
+    $(function () {
+
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        itemSelector: '.element-item-news',
+        layoutMode: 'fitRows'
+      });
+      // filter functions
+      var filterFns = {
+        // show if number is greater than 50
+        numberGreaterThan50: function () {
+          var number = $(this).find('.number').text();
+          return parseInt(number, 10) > 50;
+        },
+        // show if name ends with -ium
+        ium: function () {
+          var name = $(this).find('.name').text();
+          return name.match(/ium$/);
+        }
+      };
+
+      // bind filter button click
+      $('.filters-button-group').on('click', 'li', function () {
+        var filterValue = $(this).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[filterValue] || filterValue;
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // change is-checked class on buttons
+
+      $('.button-group').each(function (i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'li', function () {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $(this).addClass('is-checked');
+        });
+      });
+
+      $('.filters-select').on('change', function () {
+        // get filter value from option value
+        var filterValue = this.value;
+        // use filterFn if matches value
+        filterValue = filterFns[filterValue] || filterValue;
+        $grid.isotope({ filter: filterValue });
+      });
+
+
+      $("#owl-demo").owlCarousel({
+
+
+
+        navigation: true,
+
+        slideSpeed: 300,
+
+        paginationSpeed: 400,
+
+        singleItem: true,
+
+        paginationNumbers: true
+
+
+
+        // "singleItem:true" is a shortcut for:
+
+        // items : 1,
+
+        // itemsDesktop : false,
+
+        // itemsDesktopSmall : false,
+
+        // itemsTablet: false,
+
+        // itemsMobile : false
+
+
+
+      });
+
+      $('#owl-event').owlCarousel({
+
+        navigation: true,
+
+        slideSpeed: 300,
+
+        paginationSpeed: 400,
+
+        singleItem: true,
+
+        paginationNumbers: true
+
+      });
+      $('.venobox').venobox();
+
+    });
+
+  </script>
+</body>
+
+</html>

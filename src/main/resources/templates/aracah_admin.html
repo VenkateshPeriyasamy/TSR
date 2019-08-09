@@ -1,0 +1,237 @@
+
+<!doctype html>
+
+<html>
+<head>
+<title>Alumni Details</title>
+
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="icon" type="image/png" href="images/favicon.png"
+	sizes="16x19" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" type="text/css" href="css/jquerydatatable.css" />
+<link rel="stylesheet" type="text/css" href="css/alumni.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.editor.dataTables.min.css" /> 
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css"
+	rel="stylesheet">
+
+<script src="js/modernizr.custom.js"></script>
+<script data-require="jquery@*" data-semver="3.1.1"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script data-require="datatables@*" data-semver="1.10.12"
+	src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="dataTables.rowReorder.js"></script>
+<link data-require="datatables@*" data-semver="1.10.12" rel="stylesheet"
+	href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+<link rel="stylesheet"
+	href="//cdn.datatables.net/rowreorder/1.2.0/css/rowReorder.dataTables.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+.container {
+	width: 80%;
+	padding: 0;
+}
+
+.dept-pages-list {
+	display: inline-flex;
+	margin: 30px;
+}
+
+.dept-pages-list p {
+	text-align: center;
+}
+
+.dept-pages-list li {
+	padding: 20px 0px 55px 230px;
+}
+
+th {
+	color: white;
+	font-size: 16px;
+	line-height: 14px;
+	font-family: 'RobotoMedium';
+	padding: 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.addRow {
+	line-height: 45px;
+	background-color: #fff;
+	padding-left: 10px;
+	border-bottom: 1px solid;
+	border-top: 1px solid #e5e5e5;
+}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover, a.active {
+	color: #588341;
+}
+</style>
+</head>
+<body>
+
+	<section class="inner-pre-courses container alumni-sec">
+
+		<section class="inner-pre-wrap">
+
+			<div class="tab-content">
+
+				<h1 style="text-align: center">ALUMNI DETAILS</h1>
+
+				<div class="dept-pages">
+
+
+
+					<ul class="dept-pages-list">
+						<li><a href="/admin_details"><img
+								src="images/tsr-logo.png">
+								<p>TSR</p> </a></li>
+
+						<li><a href="/rcamsar_admin"><img
+								src="images/rcamcr-logo.jpg">
+								<p>RCAMSAR</p> </a></li>
+
+						<li><a href="/aracah_admin"><img
+								src="images/arach-logo.jpg">
+								<p>ARACAH</p> </a></li>
+					</ul>
+				</div>
+			</div>
+			<section id="content2">
+				<h1 style="text-align: center">ARACAH ALUMNI DETAILS</h1>
+				<div id="tab2" class="tab-content">
+					<div class="col-md-5 select">
+						<select style="font-size: 16px; color: #33432b;" id="dept"
+							class="select-text" required>
+							<option value="" selected>Select CourseType</option>
+							<option value="course">Course</option>
+
+						</select> <span class="select-highlight"></span> <span class="select-bar"></span>
+						<label class="select-label"></label>
+					</div>
+					<div class="col-md-5 select">
+						<select style="font-size: 16px; color: #33432b" id="course"
+							class="select-text" required>
+							<option value="" selected>Select Courses</option>
+							<option value="Bsc Maritime Hospitality Studies">Bsc
+								Maritime Hospitality Studies</option>
+							<option value="Certificate Course in Maritime Catering">Certificate
+								Course in Maritime Catering</option>
+							<option value="BA Culinary Arts">BA Culinary Arts</option>
+							<option value="Short term Maritime Catering">Short term
+								Maritime Catering</option>
+						</select> <span class="select-highlight"></span> <span class="select-bar"></span>
+						<label class="select-label"></label>
+					</div>
+
+					<div class="col-md-5 select">
+						<select style="font-size: 16px; color: #33432b" id="batchno"
+							class="select-text" required>
+							<option value="" selected>Batch No</option>
+							<option value="21">21(2016)</option>
+							<option value="22">22(2017)</option>
+						</select> <span class="select-highlight"></span> <span class="select-bar"></span>
+						<label class="select-label"></label>
+					</div>
+
+					<div id="details" class="col-md-12">
+						<a class="editor_create">Create new record</a>
+						<table id="example1" class="display"
+							style="width: 100%; background-color: #588341">
+							<thead>
+								<tr>
+
+									<th>Roll No</th>
+									<th>Name</th>
+									<th>DOB</th>
+									<th>INDoSNO</th>
+									<th>Year of Passing</th>
+									<th>Batch No</th>
+									<th>Edit / Delete</th>
+								</tr>
+							</thead>
+						</table>
+						<table id="newRow" style="display: none">
+							<tbody>
+								<tr>
+
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+
+
+									<!-- <td><i class="fa fa-pencil-square" aria-hidden="true"></i>
+                                                <i class="fa fa-minus-square" aria-hidden="true"></i></td>  -->
+								</tr>
+							</tbody>
+						</table>
+
+
+					</div>
+				</div>
+			</section>
+		</section>
+	</section>
+
+	<script src="js/jquery-1.11.3.js"></script>
+     <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/owl.carousel.min.js"></script> 
+    
+    <script src="js/aracah_admin.js"></script>  
+    <script src="js/jquery.dataTables.min.js"></script> 
+    <script src="js/dataTables.editor.min.js"></script>
+     <script src="js/jquery-ui.min.js"></script> 
+    <script src="js/jquery-ui.min.js"></script>
+     <script src="js/bootstrap.js"></script> 
+     <script src="js/main.js"></script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

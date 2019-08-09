@@ -1,0 +1,144 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 60px;
+	text-align: center;
+	position: relative;
+}
+
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons div{
+	color: #983327;
+	text-indent: -9999px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 8px 55px;
+	padding: 0;
+	/*font-size: 12px;
+	filter: Alpha(Opacity=50);
+	opacity: 0.5;*/
+}
+
+.owl-prev, .owl-next {
+	background: url(../images/news_navigation.png) no-repeat 0px 0px;
+	width: 15px;
+	height: 16px;
+}
+.owl-prev:hover {
+	background: url(../images/news_navigation.png) no-repeat left bottom;
+}
+.owl-next {
+	background: url(../images/news_navigation.png) no-repeat right top;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+.owl-next:hover {
+	background: url(../images/news_navigation.png) no-repeat right bottom;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	position: relative;
+	z-index: 10;
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	opacity: 1;
+}
+
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #a3a3a3;
+	font-family: 'OfficinaSerifStdBoldItalic_0';
+	font-size: 20px;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	color: #983327;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+/*Custom*/
+#owl-event {
+	overflow: hidden;
+}
+#owl-event.owl-theme .owl-controls .owl-page.active span,
+#owl-event.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	color: #003e64;
+}
+#owl-event .owl-prev, #owl-event .owl-next {
+	background: url(../images/event_navigation.png) no-repeat 0px 0px;
+	width: 15px;
+	height: 16px;
+}
+#owl-event .owl-prev:hover {
+	background: url(../images/event_navigation.png) no-repeat left bottom;
+}
+#owl-event .owl-next {
+	background: url(../images/event_navigation.png) no-repeat right top;
+}
+#owl-event .owl-next:hover {
+	background: url(../images/event_navigation.png) no-repeat right bottom;
+}
+#tsrCateringNews .owl-next, #tsrCateringNews .owl-prev, #tsrCateringGallery .owl-prev, #tsrCateringGallery .owl-next {
+	width: 10px;
+	height: 16px;
+	background: url(../images/cater_arrow.png) no-repeat left top;
+}
+#tsrCateringNews .owl-prev:hover, #tsrCateringGallery .owl-prev:hover {
+	background: url(../images/cater_arrow.png) no-repeat left bottom;
+}
+#tsrCateringNews .owl-next, #tsrCateringGallery .owl-next {
+	background: url(../images/cater_arrow.png) no-repeat right top;
+}
+#tsrCateringNews .owl-next:hover {
+	background: url(../images/cater_arrow.png) no-repeat right bottom;
+}
+#tsrCateringNews .owl-controls, #tsrCateringGallery .owl-controls {
+	margin: 10px 0 0;
+}
+#tsrCateringNews .owl-controls .owl-buttons div, #tsrCateringGallery .owl-controls .owl-buttons div {
+	margin: 0 22px;
+}
+#tsrCateringGallery .owl-buttons {
+	right: 40px;
+}
+#tsrCateringCourse .owl-controls, #tsrCateringTesti .owl-controls {
+	margin: 0;
+	
+}

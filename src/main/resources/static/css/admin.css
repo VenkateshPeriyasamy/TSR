@@ -1,0 +1,55 @@
+.admin-login-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	background: #f1f2f3;
+	padding: 20px 10px;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px #ccc;
+	width: 400px;
+	height: 435px;
+}
+
+.admin-login-submit {
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	background-color: #588341;
+	color: aliceblue;
+	padding: 10px;
+	width: 100px;
+}
+
+.admin-password, .admin-username {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #e0e0e0;
+	background: transparent;
+	margin: 20px 50px;
+	width: 300px;
+}
+
+#submit {
+	text-align: center;
+}
+
+.admin-login-form input:focus {
+	border-bottom: 2px solid #588341;
+}
+
+.login-logo {
+	width: 120px;
+	margin: 2px auto;
+}
+
+.error {
+	color: #e81313;
+	margin: 20px 50px;
+}
+
+.username {
+	margin-top: 10px;
+}

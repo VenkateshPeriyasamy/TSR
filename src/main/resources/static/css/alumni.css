@@ -1,0 +1,264 @@
+.select {
+	position: relative;
+	margin: 30px;
+}
+
+.select-text {
+	position: relative;
+	background-color: transparent;
+	width: 350px;
+	padding: -1px 10px 10px 0;
+	font-size: 18px;
+	font-family: RobotoMedium;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.select-text:focus {
+	outline: none;
+	/* border-bottom: 1px solid rgba(0, 0, 0, 0); */
+}
+
+/* .select .select-text {
+	font-size: 14px;
+} */
+
+.select-label {
+	color: rgba(0, 0, 0, 0.26);
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	font-family: RobotoMedium;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+
+.select-text:focus ~ .select-label, .select-text:valid ~ .select-label {
+	color: #c0c3c5;
+	top: -20px;
+	transition: 0.2s ease all;
+	/* font-size: 15px; */
+}
+
+.select-bar {
+	position: relative;
+	display: block;
+}
+
+.select-bar:before, .select-bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #588341;
+	transition: 0.2s ease all;
+}
+
+.select-bar:before {
+	left: 50%;
+}
+
+.select-bar:after {
+	right: 50%;
+}
+
+.select-text:focus ~ .select-bar:before, .select-text:focus ~
+	.select-bar:after {
+	width: 50%;
+}
+
+.select-highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.details {
+	margin: 30px;
+}
+
+.error-span {
+	color: #de1313;
+	position: absolute;
+	left: 11px;
+	padding-top: 40px;
+	height: 20px;
+    margin-top: 10px;
+    margin-left:9px;
+    font-family: RobotoMedium;
+    
+}
+
+.error {
+	color: #de1313;
+	
+	
+}
+
+@media ( max-width : 991px) {
+	.tab-content ul {
+		display: block;
+	}
+}
+
+.signup-form {
+	margin: 0 auto;
+	padding: 20px 20px;
+	box-shadow: 0 4px 36px #ccc;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	background: #f1f2f3;
+}
+
+.form-button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: #588341;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: auto 37%;
+	text-align: center;
+	margin-top:20px;
+}
+
+.form-button {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+.signup-form-group {
+	padding: 10px 20px;
+	position: relative;
+	margin: 25px 25px;
+	display:flex;
+}
+
+.signup-form-input:focus {
+	border-bottom: 2px solid #588341;
+}
+
+.login-logo {
+	width: 120px;
+	margin: 6px auto;
+}
+
+.login-logo img {
+	width: 90px;
+	margin: 0 auto;
+}
+
+.signup-form select {
+	color: #b3afaf;
+	font-size: 18px;
+}
+
+.signup-form option {
+	color: #000000;
+	font-size: 18px;
+}
+#select{
+	color: #b3afaf;
+	font-size: 18px;
+}
+
+::placeholder {
+	color: #b3afaf;
+	font-size: 18px;
+	font-family: RobotoMedium;
+}
+
+.form-title {
+	text-align: center;
+	font-family: RobotoMedium;
+	font-weight: bold;
+}
+
+.datepicker {
+	background-color: #588341;
+}
+
+.file_attach {
+	padding: 10px;
+	margin: 25px 25px;
+	/*  color:transparent; */
+}
+
+.attachment {
+	
+	align-items: center;
+	font-size: 18px;
+	font-family: RobotoMedium;
+	/*padding: 5px;*/
+	border-radius: 6px;
+	cursor: pointer;
+	margin-left:20px;
+}
+
+.attachment>i {
+	margin-left: 10px;
+}
+
+textarea {
+	resize: none;
+	 
+   
+}
+.signup-form-input-message{
+	margin-top: 10px;
+    border: 2px solid #e0e0e0;
+	/*border-bottom: 2px solid #e0e0e0;*/
+	background-color: transparent;
+	outline: none;
+	width:320px;
+}
+
+input[type=file] {
+	display: none;
+}
+
+#fa {
+	font-size: 25px;
+	color: #b3a9a9;
+}
+.signup-form-group label {
+   
+    font-size: 18px;
+    font-family: 'RobotoMedium';
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    text-align: left;
+    margin-right:15px;
+    float:left;
+}
+.signup-form-input{
+    height: 20px;
+    width: 320px;
+    margin-top: 10px;
+    border: none;
+	border-bottom: 2px solid #e0e0e0;
+	background-color: transparent;
+	outline: none;
+	font-size: 18px;
+	font-family: 'RobotoMedium';
+}
+.editor_create{
+	color:#2b2828;
+	padding:20px;
+	cursor: pointer;
+}
+.editor_create:hover{
+	color: #466c33;
+	
+}

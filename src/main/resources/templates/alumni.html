@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Alumni</title>
+<link rel="icon" type="image/png" href="images/favicon.png"
+	sizes="16x19" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" type="text/css" href="css/jquerydatatable.css" />
+<link rel="stylesheet" type="text/css" href="css/alumni.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script src="js/modernizr.custom.js"></script>
+
+<style type="text/css">
+.tab-content h3 {
+	font-size: 17px;
+	margin: 10px 0 0;
+}
+
+th{
+color:white;
+    font-size: 16px;
+    line-height: 14px;
+    font-family: 'RobotoMedium';
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+   
+}
+
+.sec-head-level {
+	margin: 40px 0 0;
+}
+
+
+
+.tab-content ul {
+	margin: 20px 0 0;}
+
+.tab-content ul li {
+    overflow: hidden;
+    background: url(images/course_li_bullet.png) no-repeat left 5px;
+    padding: 0 0 15px 22px;
+    color: #7d7d7d;
+}
+
+.tab-content ul.green {
+	background: #503c1d;
+}
+
+.tab-content ul.blue {
+	background: #996400c9;
+}
+
+.tab-content ul li i {
+	padding: 10px;
+}
+
+.faq-slide {
+	margin: 0 0 10px;
+}
+
+.faq {
+	background: #454545; //
+	margin: 0 0 10px;
+}
+
+.faq a {
+	color: #fff;
+	display: block;
+	padding: 10px;
+}
+
+.faq-expand ul {
+	margin: 10px 0 25px;
+}
+
+header .header-left {
+	float: left;
+	padding: 25px 0 10px 18px;
+	background: #fff;
+	position: relative;
+	width: 46%;
+	z-index: 22;
+}
+.datepicker{
+	background-color:#173042;
+	color:white;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+	<div class="master-preloader"></div>
+	<section id="wrapper">
+		<header class="hidden-sm hidden-xs">
+			<div class="header-left">
+				<div class="logo">
+					<a href="/index"><img src="images/logo.png"></a>
+				</div>
+				<div class="dept-pages">
+					<ul class="dept-pages-list">
+						<li><a href="/tsr"><img src="images/tsr-logo.png">
+								<p>T.S.RAHAMAN</p></a></li>
+						<li><a href="/rcamsar"><img src="images/rcamcr-logo.jpg">
+								<p>RCAMSAR</p></a></li>
+						<li><a href="/aracah"><img src="images/arach-logo.jpg">
+								<p>ARACAMH</p></a></li>
+						<li><a href="http://www.lkmschool.in/" target="_blank"><img
+								src="images/lkm-logo.jpg">
+								<p>LKM School</p></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-right">
+				<div class="head-right-top">
+					<div class="bookings">
+						<ul>
+							<li><a
+								href="http://live.ipms247.com/booking/docs/hostelbooking/book.php"
+								class="btn-white-book" target="_blank">BOOK ROOM</a></li>
+							<!-- <li>
+                  <a href="http://59.185.107.58/tsr/selectcoursecategory.aspx" target="_blank" class="btn-white-book">BOOK COURSE ONLINE</a>
+                </li> -->
+							<li><a href="http://183.87.148.62:7274/application/index"
+								class="btn-white-book" target="_blank">BOOK COURSE ONLINE</a></li>
+							<!--   <li><a href="/alumni" class="btn-white-book" target="_blank">ALUMNI</a> -->
+							</li>
+						</ul>
+					</div>
+					<div class="head-social">
+						<h4>Follow Us</h4>
+						<ul>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="head-right-bottom">
+					<nav>
+						<ul>
+							<li><a href="/index">HOME</a></li>
+							<li><a href="/about">ABOUT US</a></li>
+							<li><a href="/faculty">FACULTY</a></li>
+							<li><a href="/gallery">GALLERY</a></li>
+							<li><a href="/contact">CONTACT US</a></li>
+						</ul>
+					</nav>
+					<div class="head-search">
+						<form class="search">
+							<input type="text" class="search-input"> <input
+								type="submit" class="search-submit"> <span></span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--mblheader-->
+		<div class="mbl-header hidden-md hidden-lg">
+			<div class="header-left">
+				<div class="logo">
+					<a href="/index"><img src="images/logo.png"></a>
+				</div>
+			</div>
+			<div class="header-right">
+				<div class="menu-click">
+					<img src="images/menu-icon.png">
+				</div>
+			</div>
+			<div class="bookings">
+				<ul>
+					<li><a href="javascript:;"
+						class="btn-white-book not-click-pop"
+						title="Hostel booking can be done when coming for the course">BOOK
+							ROOM</a></li>
+					<!-- <li>
+                  <a href="http://59.185.107.58/tsr/selectcoursecategory.aspx" target="_blank" class="btn-white-book">BOOK COURSE ONLINE</a>
+                </li> -->
+					<li><a href="http://183.87.148.62:7274/application/index"
+						class="btn-white-book" target="_blank">BOOK COURSE ONLINE</a></li>
+				</ul>
+				<div class="head-search">
+					<form class="search">
+						<input type="text" class="search-input"> <input
+							type="submit" class="search-submit"> <span></span>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--mbl-head-end-->
+		<div class="mbl-menu hidden-md hidden-lg">
+			<div class="close-menu">X</div>
+			<ul class="dept-pages-list">
+				<li><a href="/tsr" title="TRAINING SHIP RAHAMAN"><img
+						src="images/tsr-logo.png">
+						<p>TSR</p></a></li>
+				<li><a href="/rcamsar"
+					title="RAHAMAN COLLEGE OF ADVANCED MARITIME STUDIES & RESEARCH"><img
+						src="images/rcamcr-logo.jpg">
+						<p>RCAMSAR</p></a></li>
+				<li><a href="/aracah"
+					title="ABDUL RASHID ACADEMY OF CULINARY ARTS & MARITIME HOSPITALITY"><img
+						src="images/arach-logo.jpg">
+						<p>ARACAMH</p></a></li>
+				<li><a href="http://www.lkmschool.in/" target="_blank"
+					title="LKM School"><img src="images/lkm-logo.jpg">
+						<p>LKM School</p></a></li>
+			</ul>
+			<div class="mbl-nav">
+				<ul>
+					<li><a href="/index">HOME</a></li>
+					<li><a href="/about">ABOUT US</a></li>
+					<li><a href="/faculty">FACULTY</a></li>
+					<li><a href="/gallery">GALLERY</a></li>
+					<li><a href="/contact">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div class="mbl-social">
+				<ul>
+					<li><a href="#"><img src="images/mbl-fb-icon.png"></a></li>
+					<li><a href="#"><img src="images/mbl-twitter-icon.png"></a></li>
+					<li><a href="#"><img src="images/mbl-gplus-icon.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<section class="banner-inner banner-inner-courses banner-inner-cater banneralumni tsr-alumni-banner">
+      <div class="certified"><h5><img src="images/badge.png"><p class="text-center">ISO<br/>9001:2008<br/>Certified</p></h5></div>
+  </section>
+  <div class="container bg-white breadcrumb-wrap">
+    <div class="row">
+      <ul class="breadcrumb">
+        <li><a href="/index"><img src="images/breadcrumb_home.png" width="19" height="15"  alt=""/></a></li>
+         <li><a href="/tsr">TSR</a></li>
+         <li class="active">Alumni</li>
+      </ul>
+    </div>
+  </div>
+
+	<!--  	<section
+			class="banner-inner banner-inner-courses banner-inner-cater banneralumni">
+			<div class="certified">
+				<h5>
+					<img src="images/badge.png">
+					<p class="text-center">
+						ISO<br />9001:2008<br />Certified
+					</p>
+				</h5>
+			</div>
+		</section>
+		<div class="container bg-white breadcrumb-wrap">
+			<div class="row">
+				<ul class="breadcrumb">
+					<li><a href="/index"><img src="images/breadcrumb_home.png"
+							width="19" height="15" alt="" /></a></li>
+					<li class="active">Alumni</li>
+				</ul>
+			</div>
+		</div>-->
+	<section class="inner-pre-courses container alumni-sec">
+			<div class="inner-title-wrap">
+				<h2 class="inner-title">Alumni</h2>
+			</div>
+			<section class="inner-pre-wrap">
+				<div class="tabbable tabs-left">
+					<ul class="nav nav-tabs text-uppercase">
+					 <li class="parallelogram-tab pre-course-tab active"><a href="#aluTab3" data-toggle="tab"><span>About Us</span></a></li>
+						<li class="parallelogram-tab pre-course-tab"><a
+							href="#aluTab1" data-toggle="tab"><span>Member Area</span></a></li>
+						<!-- <li class="parallelogram-tab pre-course-tab"><a href="#aluTab3" data-toggle="tab"><span>Login</span></a></li> -->
+						<li class="parallelogram-tab pre-course-tab"><a
+							href="#aluTab4" data-toggle="tab"><span>Student Feedback</span></a></li>
+					</ul>
+					<div class="tab-content">
+          <div class="tab-pane active" id="aluTab3">
+            <h1>About</h1>
+            <article>Welcome to the official alumni website of Training Ship Rahaman (TSR). This virtual domain serves to connect our community of TSR alumni to their alma mater, wherever in the world they may be, by keeping them informed on the latest happenings and developments on campus and on the latest activities or events organized by TSR.</article>
+            <article>The website is developed so that TSR can use it both as a key resource to tap on for information on the latest developments at TSR as well as keep in touch with friends and fellow alumni.</article>
+            <h1 class="sec-head-level">Purpose</h1>
+            <h3>Mission: To develop and engage alumni in the future of the Institute</h3>
+            <article>The main purpose of the Association of TSR Alumni (ATSRA) is to develop and foster relationships with our alumni through various means which may include organizing events and functions to enhance interaction between alumni, faculty and the existing cadets of the institute.</article>
+            <article>The alumni association also strives to cultivate a sense of belonging to the institute by engaging existing cadets in its mission so that they will understand the importance of maintaining lifetime ties with TSR.</article>
+            <article>This would encourage future alumni to participate in the development of the institute’s vision of becoming a centre of academic excellence in maritime education.</article>
+            <h1 class="sec-head-level">Our Team</h1>
+            <article>TSR ensures the alumni association is equipped to support the strategic goals of the institute in becoming a centre of academic excellence in maritime education globally. It also welcomes and encourages alumni members who have a keen interest in developing and working for the goals of the institute to be part of the team.</article>
+            <h3>The key functions of the TSR are:</h3>
+            <ul>
+                <li>Providing operation guidance for the alumni association</li>
+                <li>Serve in aiding the branding and marketing arm of the institute</li>
+                <li>Seeking out collaborative opportunities with external partners in providing privileges and services to our alumni.</li>
+                <li>Facility management, rental space management.</li>
+                <li>Promote and develop avenues to galvanise alumni and actively involve them in the institute’s marketing campaign to raise awareness in other schools and academic bodies.</li>
+            </ul>
+          </div>
+					
+						<div class="col-md-12 tab-pane " id="aluTab1">
+							<h1 style="text-align:center">MEMBER AREA</h1>
+							
+							<div
+									class="col-md-5 select">
+									<select style="font-size: 16px;color:#33432b" id="batchno"  class="select-text" required>
+									<option value="" selected>Batch No</option>
+										<option value="10">10(2017)</option>
+										<option value="11">11(2018)</option>
+										<option value="12">12(2019)</option>
+										<option value="15">15(2016)</option>
+										<option value="16">16(2017)</option>
+										<option value="58">58(2016)</option>
+										<option value="59">59(2017)</option>
+										</select> <span class="select-highlight"></span> <span class="select-bar"></span>
+										<label class="select-label"></label>
+										</div>
+							
+							<div  class="col-md-5 select">
+								<select style="font-size: 16px;color:#33432b;" id="dept" class="select-text" required>
+									<option value="" selected>Select CourseType</option>
+									<option value="preseacourses">Presea Courses</option>
+									<option value="postseacourses" >Postsea Courses</option>
+								</select> <span class="select-highlight"></span> <span class="select-bar"></span>
+								<label class="select-label"></label>
+							</div>
+							<div class="col-md-5 select">
+								<select style="font-size: 16px;color:#33432b" id="course"  class="select-text" required>
+									<option value="" selected >Select Courses</option>
+									<option value="Bsc Nautical Science">Bsc Nautical Science</option>
+									<option value="IMU Diploma In Nautical Science">IMU Diploma In Nautical Science</option>
+									<option value="Pre Sea General Purpose Rating Training Course">Pre Sea General Purpose Rating Training Course</option>
+									<option value="Basic STCW">Basic STCW</option>
+									<option value="Advanced STCW">Advanced STCW</option>
+									<option value="Refresher Updation Course" >Refresher Updation Course</option>
+									<option value="Offshore Courses" >Offshore Courses</option>
+								</select> <span class="select-highlight"></span> <span class="select-bar"></span>
+								<label class="select-label"></label>
+							</div>
+						 	
+
+
+							<div id="details" class="col-md-12">
+								<table id="example" class="display"  style="width: 100%; background-color:#588341">
+									<thead>
+										<tr>
+											<th>Roll No</th>
+											<th>Name</th>
+											<th>Date of Birth</th>
+											
+											
+											
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+
+										</tr>
+									</tbody>
+								</table>
+								
+							</div>
+						</div>
+
+						<!--           <div class="tab-pane alumni-tabs" id="aluTab3">
+			<form action="#" class="form">
+				<h1 class="form-title">WELCOME TO TSR ALUMINI</h1>
+				<div class="login-logo">
+					<img src="images/login.png">
+				</div>				
+				<div class="form-group">
+					<input type="text" class="form-input" placeholder="User Name">
+					<label for="#" class="form-label"></label>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-input" placeholder="Password">
+					<label for="#" class="form-label"></label>
+				</div>
+				<button class="form-button">Login</button>
+			</form>
+          </div> -->
+
+
+						<div class="tab-pane" id="aluTab4">
+							<form action="#" id="contact_form" enctype="multipart/form-data" method="post"
+								class="col-xs-12 col-sm-10 col-md-9 col-lg-9 signup-form">
+								<h1 class="form-title">WELCOME TO TSR ALUMNI</h1>
+								<div class="login-logo">
+									<img src="images/tsr-logo1.png">
+								</div>
+								<div
+									class="signup-form-group">
+									<label for="name">Name: </label>
+									<input type="text" name="name" id="name"class="signup-form-input" autocomplete="off" > 
+									<!-- <label for="#" class="form-label"></label> -->
+								</div>
+								
+								<!--<div
+									class="col-xs-12 col-sm-10 col-md-12 col-lg-5 signup-form-group">
+									<input type="text" name="batchno" id="batchno"
+										class=" signup-form-input" autocomplete="off" placeholder="BatchNo" required> <label
+										for="#" class="form-label"></label>
+								</div>  -->
+								 <div
+									class="signup-form-group ">
+									<label for="email">Email: </label>
+									<input type="text" name="email" id="email"
+										class="signup-form-input email" autocomplete="off" >
+										<!-- <label for="#" class="form-label"></label>  -->
+								</div>
+								<!-- <div
+									class="col-xs-12 col-sm-10 col-md-12 col-lg-5 signup-form-group">
+								 <input type="password" name="password" id="password"
+										class=" signup-form-input" placeholder="Password"> <label
+										for="#" class="form-label"></label> 
+								</div>
+								<div
+									class="col-xs-12 col-sm-10 col-md-12 col-lg-5 signup-form-group">
+									 <input type="password" name="confirmpassword"
+										id="confirmpassword" class=" signup-form-input"
+										placeholder="Confirm Password"> <label for="#"
+										class="form-label"></label> 
+								</div> -->
+								<!--<div
+									class="col-xs-12 col-sm-10 col-md-12 col-lg-11  signup-form-group">
+									<input type="text" name="indosno"
+										class="signup-form-input" id="indosno"
+										placeholder="INDoSNO"> <label for="#"
+										class="form-label"></label>
+
+								</div>
+								
+									<div
+									class="col-xs-12 col-sm-10 col-md-12 col-lg-11  signup-form-group">
+									<input type="text" name="rollno"
+										class="signup-form-input" id="rollno"
+										placeholder="RollNo"> <label for="#"
+										class="form-label"></label>
+
+								</div>
+								<div
+									class="col-xs-12 col-sm-10 col-md-12 col-lg-5 signup-form-group">
+									<input type="dob" name="dob" id="dob"
+										class=" signup-form-input" autocomplete="off" placeholder="Date of Birth"> <label
+										for="#" class="form-label"></label>
+								</div>
+								<div
+									class="col-xs-12 col-sm-10 col-md-12 col-lg-5 col-xs-12 col-sm-10 col-md-12 col-lg-11 signup-form-group">
+									<input type="text" name="passedout" id="passedout"
+										class=" signup-form-input" autocomplete="off" placeholder="Year Of Passing">
+									<label for="#" class="form-label"></label>
+								</div>  -->
+								<div
+									class="  signup-form-group">
+								 	<label for="mobilenumber">Contact Number:</label>
+									<input type="text" name="mobilenumber"
+										class=" signup-form-input" id="mobilenumber" autocomplete="off"> 
+								</div>
+								
+								<div
+									class="signup-form-group">
+								 	<label for="batchno">Batch No:</label>
+									<!--<input type="text" name="batchno"
+										class="signup-form-input" id="batchno" autocomplete="off">   -->
+										<select  class="signup-form-input" id="batchno" name="batchno" autocomplete="off" required>
+									<option value="" selected>Select Batch No</option>
+										<option value="10(2017)">10(2017)</option>
+										<option value="11(2018)">11(2018)</option>
+										<option value="12(2019)">12(2019)</option>
+										<option value="15(2016)">15(2016)</option>
+										<option value="16(2017)">16(2017)</option>
+										<option value="58(2016)">58(2016)</option>
+										<option value="59(2017)">59(2017)</option>
+										</select> <span class="select-highlight"></span> <span class="select-bar"></span>
+										
+								</div>
+								
+								<div
+									class="signup-form-group">
+									<label for="course">CourseType: </label>
+									<select class="signup-form-input" name="department"
+										id="department" autocomplete="off">
+										<option value=""selected>Select CourseType</option>
+										<option value="Preseacourses">Presea Courses</option>
+									<option value="Postseacourses">Postsea Courses</option>
+									</select> <span class="select-highlight"></span> <span class="select-bar"></span>
+							
+								</div>
+								<div
+									class="signup-form-group">
+									<label>Course Name: </label>
+									<select class="signup-form-input" name="course" id="courses" autocomplete="off">
+									<option value="" selected id="select">Select Course</option>
+									<option value="Bsc Nautical Science">Bsc Nautical Science</option>
+									<option value="IMU Diploma In Nautical Science">IMU Diploma In Nautical Science</option>
+									<option value="Pre Sea General Purpose Rating Training Course">Pre Sea General Purpose Rating Training Course</option>
+									<option value="Basic STCW">Basic STCW</option>
+									<option value="Advanced STCW">Advanced STCW</option>
+									<option value="Refresher Updation Course">Refresher Updation Course</option>
+									<option value="Offshore Courses">Offshore Courses</option>
+									</select> <span class="select-highlight"></span> <span class="select-bar"></span>
+								<!--<label class="select-label">Select Courses</label>  -->
+								</div>
+									<div
+									class="signup-form-group">
+									 <label >Present Organization: </label>
+									<input class="signup-form-input" name="presentorganization" id="presentorganization" autocomplete="off"></input>
+									</div>
+									
+									<div
+									class="signup-form-group">
+										 <label >Designation: </label>
+									<input class="signup-form-input" name="designation" id="designation" autocomplete="off" ></input>
+									</div>
+									
+									<div
+									class="signup-form-group">
+									 <label >Present Location: </label>
+									<input class="signup-form-input" name="presentlocation" id="presentlocation" autocomplete="off"></input>
+									</div>
+									
+									<div
+									class="signup-form-group">
+									 <label >Message: </label>
+									<textarea class="signup-form-input-message" name="message" id="message" rows="5" cols="" autocomplete="off" ></textarea>
+									</div>
+									
+									<div class="file_attach">
+									<input type="file" name="attachment" class="attachment" id="attachment">
+									<label class="attachment" for="attachment">Attachment<i class="fa fa-paperclip" id="fa"aria-hidden="true"></i>
+									</label>
+									
+									</div>
+								
+								
+								<button class="form-button" id="submit">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<!-- /tabs -->
+
+			</section>
+		</section>
+
+		<section class="footer-warp footer-warp-home">
+			<div class="footer-full home-footer-full">
+				<div class="foot-bg-wrap">
+					<div class="container">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-details5">
+							<h1>Newsletter Signup</h1>
+							<p class="parallelogram-input">
+								<input type="text" />
+							</p>
+							<p class="text-uppercase btn-signup">
+								<a href="#" class="btn-green btn-white"><span>sign up</span></a>
+							</p>
+							<hr>
+							<h5>Social Network</h5>
+							<ul class="foo-social-group">
+								<li><a href="" class=""></a></li>
+								<li><a href="" class=""></a></li>
+								<li><a href="" class=""></a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-details6">
+							<h1>Site Map</h1>
+							<ul>
+								<li><a href="/index">Home</a></li>
+								<li><a href="/about">About us</a></li>
+								<li><a href="/faculty">Faculty</a></li>
+								<li><a href="/gallery">Gallery</a></li>
+								<li><a href="/contact">Contact us</a></li>
+							</ul>
+							<img src="images/foot-logo.png">
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-details7">
+							<h1>For an Enquiry</h1>
+							<p class="parallelogram-input">
+								<select class="select-foot">
+									<option selected="selected" hidden>Select</option>
+									<option>Pre Sea (Nautical)</option>
+									<option>Post Sea (STCW)</option>
+									<option>ARACAMH</option>
+									<option>RCAMSAR</option>
+								</select>
+							</p>
+							<p class="parallelogram-input">
+								<input type="text" placeholder="Name">
+							</p>
+							<p class="parallelogram-input">
+								<input type="text" placeholder="Email">
+							</p>
+							<p class="parallelogram-input">
+								<input type="text" placeholder="Phone">
+							</p>
+							<p class="parallelogram-input">
+								<textarea type="text" placeholder="Message"></textarea>
+							</p>
+							<p class="text-uppercase btn-signup">
+								<a href="#" class="btn-green btn-white"><span>contact
+										us</span></a>
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 contact-address">
+							<h1>Contact</h1>
+							<ul>
+								<li><strong>T.S. Rahaman Campus - Nhava</strong></li>
+								<li>Nhava, Panvel, Raigarh,</li>
+								<li>Maharashtra 410206, India</li>
+							</ul>
+							<a href="pdf/policy.pdf" class="cancel-policy" target="_blank">Cancellation
+								Policy PDF</a>
+							<ul>
+								<li><strong>Training Ship Rahaman<br /> Sir
+										Mohamed Yusuf Seamen Welfare Foundation
+								</strong></li>
+								<li>Jahaz Mahal Annexe, 170 K, Samander Point Estate,<br />
+									Opp.Lotus, Worli,<br /> Mumbai – 400 018.
+								</li>
+								<li>Contact:<br /> <a href="callto:022-24933324">022-24933324
+										,</a><a href="callto:022-24938740"> 24938740</a></li>
+								<li>Email: <a href='mailto:booking@tsrahaman.org'>booking@tsrahaman.org</a></li>
+							</ul>
+							<h1>National Anti ragging</h1>
+							<ul class="foot-addr">
+								<li>1800-180-552 (24 x 7 Toll Free)</li>
+								<li><a href="mailto:helpline@antiragging.in">helpline@antiragging.in</a></li>
+								<li><a href="http://www.ugc.ac.in" target="_blank">www.ugc.ac.in</a></li>
+								<li><a href="http://www.antiragging.in" target="_blank">www.antiragging.in</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p class="text-center">&copy; 2015 T S Rahaman | All Rights
+					Reserved.</p>
+			</div>
+		</section>
+
+	</section>
+	<div class="pop-not-click">
+		<div class="pop-cont">
+			<div class="pop-close">X</div>
+			<div class="pop-event-cont">
+				<h1>Hostel Booking</h1>
+				<article>Hostel booking can be done when coming for the
+					course.</article>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.dlmenu.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/alumni.js"></script>
+	<script src="js/contact1.js"></script>
+	
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquerydatatable.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+	
+	<script>
+		$(document)
+				.ready(
+						function() {
+
+							(function blink() {
+								$('.blink_me').fadeOut(500).fadeIn(500, blink);
+							})();
+							//$('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-tabs'});
+
+							$(".tsr_gallery").owlCarousel({
+
+								//autoPlay: 3000, //Set AutoPlay to 3 seconds 
+								navigation : true,
+								items : 4,
+								itemsDesktop : [ 1199, 3 ],
+								itemsDesktopSmall : [ 979, 3 ]
+
+							});
+
+							$('.faq-expand').hide();
+
+							$('.faq')
+									.click(
+											function() {
+												$(this).next('.faq-expand')
+														.slideToggle();
+												$(this).parent().siblings()
+														.children().next()
+														.slideUp();
+												return false;
+											})
+
+									/* (
+											function($) {
+
+												"use strict"
+												// Accordion Toggle Items
+
+												var iconOpen = 'fa fa-minus',
+
+												iconClose = 'fa fa-plus';
+
+												$(document)
+														.on(
+																'show.bs.collapse hide.bs.collapse',
+																'.accordion',
+																function(e) {
+
+																	var $target = $(e.target)
+
+																	$target
+																			.siblings(
+																					'.accordion-heading')
+
+																			.find(
+																					'em')
+																			.toggleClass(
+																					iconOpen
+																							+ ' '
+																							+ iconClose);
+
+																	if (e.type == 'show')
+
+																		$target
+																				.prev(
+																						'.accordion-heading')
+																				.find(
+																						'.accordion-toggle')
+																				.addClass(
+																						'active');
+
+																	if (e.type == 'hide')
+
+																		$(this)
+																				.find(
+																						'.accordion-toggle')
+																				.not(
+																						$target)
+																				.removeClass(
+																						'active');
+
+																});
+
+											})(jQuery); */
+
+							var QueryString = function() {
+								// This function is anonymous, is executed immediately and 
+								// the return value is assigned to QueryString!
+								var query_string = {};
+								var query = window.location.search.substring(1);
+								var vars = query.split("&");
+								for (var i = 0; i < vars.length; i++) {
+									var pair = vars[i].split("=");
+									// If first entry with this name
+									if (typeof query_string[pair[0]] === "undefined") {
+										query_string[pair[0]] = decodeURIComponent(pair[1]);
+										// If second entry with this name
+									} else if (typeof query_string[pair[0]] === "string") {
+										var arr = [ query_string[pair[0]],
+												decodeURIComponent(pair[1]) ];
+										query_string[pair[0]] = arr;
+										// If third or later entry with this name
+									} else {
+										query_string[pair[0]]
+												.push(decodeURIComponent(pair[1]));
+									}
+								}
+								return query_string;
+							}();
+
+							switch (QueryString.tsrcourse) {
+							case "cater-pre-1":
+								$(".parallelogram-tab").eq(0).find("a").click();
+								break;
+							case "cater-pre-2":
+								$(".parallelogram-tab").eq(1).find("a").click();
+								break;
+							case "cater-pre-3":
+								$(".parallelogram-tab").eq(2).find("a").click();
+								break;
+							default:
+								//default code block
+							}
+						});
+	</script>
+</body>
+</html>
