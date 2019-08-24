@@ -54,5 +54,26 @@ protected String getServiceCode() {
 	  {
 	    return response(this.attendanceService.checkout(attendanceRequest));
 	  }
+	  
+	  @PostMapping(value={"/user/week"}, produces={"application/json; charset=UTF-8"})
+	  public Response attendanceweek(@RequestBody AttendanceRequest attendanceRequest)
+	    throws BaseException
+	  {
+	    return response(this.attendanceService.weeklist(attendanceRequest));
+	  }
+	  @PostMapping(value={"/user/attendancemanagement"}, produces={"application/json; charset=UTF-8"})
+	  public Response attendancemanagement(@RequestBody AttendanceRequest attendance)throws BaseException{
+
+		  return response(attendanceService.attendancedetails(attendance));
+		  
+	  }
+	  
+	  
+	  @PostMapping(value={"/user/attendancelist"}, produces={"application/json; charset=UTF-8"})
+	  public Response attendancelist(@RequestBody AttendanceRequest attendance)throws BaseException{
+
+		  return response(attendanceService.attendancelist(attendance));
+		  
+	  }
    
 }

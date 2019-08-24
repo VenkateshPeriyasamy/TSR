@@ -10,7 +10,42 @@ public class AttendanceResponse implements Serializable {
 	private String checkout;
 	private String totaltime;
 	private String date;
+	private String status;
+	private String firstname;
+	private String lastname;
+	private String extratime;
+	private String laggingtime;
 	
+	public String getExtratime() {
+		return extratime;
+	}
+	public void setExtratime(String extratime) {
+		this.extratime = extratime;
+	}
+	public String getLaggingtime() {
+		return laggingtime;
+	}
+	public void setLaggingtime(String laggingtime) {
+		this.laggingtime = laggingtime;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getFirstname() {
+		return firstname;
+	}
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+	public String getLastname() {
+		return lastname;
+	}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
 	public String getEmpid() {
 		return empid;
 	}

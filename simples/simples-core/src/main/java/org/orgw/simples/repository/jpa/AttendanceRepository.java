@@ -1,9 +1,14 @@
 package org.orgw.simples.repository.jpa;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.NoResultException;
 
+import org.orgw.simples.core.util.UtilHelper;
 import org.orgw.simples.repository.IAttendanceRepository;
 import org.orgw.simples.repository.model.Attendance;
+import org.orgw.simples.repository.model.EmailDetails;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
@@ -27,7 +32,7 @@ public class AttendanceRepository extends AbstractBaseRepository<Attendance> imp
 	@Override
 	public Attendance getEmployeeDetailByDate(String empid, String date) {
 		try{
-	        return this.getEntityManager().createQuery("select sc from Attendance sc where sc.empid=:empid ", Attendance.class)
+	        return this.getEntityManager().createQuery("select sc from Attendance sc where sc.empid=:empid and sc.date=:date ", Attendance.class)
 	        		.setParameter("empid", empid)
 	        		.setParameter("date", date)
 	        		.getSingleResult();
@@ -37,4 +42,43 @@ public class AttendanceRepository extends AbstractBaseRepository<Attendance> imp
 		return null;
 	}
 
+	
+	@Override
+	public List<Attendance> getweeklist(String date,String empid) {
+	
+		String modifieddate = UtilHelper.getmodifileddate(date);
+		
+		try{
+	        return this.getEntityManager().createQuery("select sc from Attendance sc where sc.empid=:empid and sc.date>=:olddate and sc.date<=:currentdate", Attendance.class)
+	        		.setParameter("empid", empid)
+	        		.setParameter("olddate", modifieddate)
+	        		.setParameter("currentdate", date)
+	        		.getResultList();
+			}catch(NoResultException  e){
+				LOG.debug("AttendanceRepository :: by getweeklist :: NoResultException");        
+			}
+		
+		return new ArrayList<Attendance>();
+		 
+	}
+	@Override
+	public List<Attendance> getattendance() {
+		
+		//List<Attendance> attendancelist = new ArrayList<Attendance>();
+		
+		try{
+			
+			return this.getEntityManager().createQuery("select sc from Attendance sc join sc.attendancefirstname ur where  sc.status=:status ", Attendance.class)
+					.setParameter("status", "1")
+	        		.getResultList();
+			}catch(NoResultException  e){
+				LOG.debug("AttendanceRepository :: by getattendance :: NoResultException");
+			}
+		// TODO Auto-generated method stub
+		return new ArrayList<Attendance>();
+		
+		
+		
+		
+	}
 }

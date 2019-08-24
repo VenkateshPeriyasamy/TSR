@@ -4,17 +4,18 @@ import java.io.Serializable;
 
 public class TestResponse implements Serializable {
 
-	private String employeid;
+	private String empid;
 	private String password;
 	private String ip;
 	private String id;
 	private String dateTime;
 	private String status;
-	public String getEmployeid() {
-		return employeid;
+	
+	public String getEmpid() {
+		return empid;
 	}
-	public void setEmployeid(String employeid) {
-		this.employeid = employeid;
+	public void setEmpid(String empid) {
+		this.empid = empid;
 	}
 	public String getPassword() {
 		return password;

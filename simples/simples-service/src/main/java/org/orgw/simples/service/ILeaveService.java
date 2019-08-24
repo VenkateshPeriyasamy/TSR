@@ -7,6 +7,8 @@ import org.orgw.simples.data.LeaveResponse;
 public interface ILeaveService {
 
 	LeaveResponse leaverequest(LeaveRequest request) throws BaseException;
+
+	LeaveResponse leaverequestapprove(LeaveRequest request)throws BaseException;
 		
 
 }

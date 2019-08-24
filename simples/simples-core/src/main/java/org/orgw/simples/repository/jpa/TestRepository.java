@@ -20,10 +20,10 @@ public class TestRepository  extends AbstractBaseRepository<Users> implements IT
 	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 
 	@Override
-	public Users getbyEmpname(String employeId) throws BaseException {
+	public Users getbyEmpname(String empid) throws BaseException {
 		try{
-	        return this.getEntityManager().createQuery("select sc from Users sc where sc.employeId=:employeId and sc.status=:status", Users.class)
-	        		.setParameter("employeId", employeId)
+	        return this.getEntityManager().createQuery("select sc from Users sc where sc.empid=:empid and sc.status=:status", Users.class)
+	        		.setParameter("empid", empid)
 	        		.setParameter("status", "1")
 	        		.getSingleResult();
 			}catch(NoResultException  e){

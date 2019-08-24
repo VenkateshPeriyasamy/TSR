@@ -41,7 +41,7 @@ public class TestCreateService implements ITestCreateService {
 		try {
 			
 			
-			Users userdetails = testRepository.getbyEmpname(request.getEmployeid());	
+			Users userdetails = testRepository.getbyEmpname(request.getEmpid());	
 			
 			if(userdetails!=null) {
 			
@@ -49,7 +49,7 @@ public class TestCreateService implements ITestCreateService {
 				datas.setIp(request.getIp());
 				datas.setPassword(request.getPassword());
 				datas.setDateTime(UtilHelper.getSystemDate());
-				datas.setEmployeId(request.getEmployeid());
+				datas.setEmpid(request.getEmpid());
 				datas.setStatus("1");
 				testRepository.save(datas);
 				testRepository.refresh(datas);
@@ -80,13 +80,13 @@ public class TestCreateService implements ITestCreateService {
 
 	private TestResponse getedata(CreateTestRequest request) throws BaseException {
 		
-		Users datas = testRepository.getbyEmpname(request.getEmployeid());
+		Users datas = testRepository.getbyEmpname(request.getEmpid());
 		TestResponse entity = new TestResponse();
 		entity.setId(datas.getId());
 		entity.setPassword(datas.getPassword());
 		entity.setDateTime(datas.getDateTime());
 		entity.setStatus(datas.getStatus());
-		entity.setEmployeid(datas.getEmployeId());
+		entity.setEmpid(datas.getEmpid());
 		entity.setIp(datas.getIp());
 		return entity;
 	}
@@ -95,15 +95,15 @@ public class TestCreateService implements ITestCreateService {
 	public TestResponse loginUser(CreateTestRequest request) throws BaseException {
 		
 		try {
-			Users userdetails = testRepository.getbyEmpname(request.getEmployeid());	
+			Users userdetails = testRepository.getbyEmpname(request.getEmpid());	
 	        
-			if((userdetails.getEmployeId().equals(request.getEmployeid())) && (userdetails.getPassword().equals(request.getPassword()))) {
+			if((userdetails.getEmpid().equals(request.getEmpid())) && (userdetails.getPassword().equals(request.getPassword()))) {
 				TestResponse entity = new TestResponse();
 				entity.setId(userdetails.getId());
 				entity.setPassword(userdetails.getPassword());
 				entity.setDateTime(userdetails.getDateTime());
 				entity.setStatus(userdetails.getStatus());
-				entity.setEmployeid(userdetails.getEmployeId());
+				entity.setEmpid(userdetails.getEmpid());
 				entity.setIp(userdetails.getIp());
 				return entity;  
 				
@@ -127,7 +127,7 @@ public class TestCreateService implements ITestCreateService {
 		Users entity = new Users();
 		entity.setIp(request.getIp());
 		entity.setPassword(request.getPassword());
-		entity.setEmployeId(request.getEmployeid());
+		entity.setEmpid(request.getEmpid());
 		entity.setStatus("1");
 		testRepository.save(entity);
 		testRepository.refresh(entity);

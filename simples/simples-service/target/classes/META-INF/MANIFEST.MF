@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: simples-service
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Orgware
+Built-By: Irshad
 Implementation-Vendor-Id: org.orgw.simples
-Build-Jdk: 1.8.0_191
+Build-Jdk: 1.8.0_192
 Implementation-URL: http://projects.spring.io/spring-boot/simples/simp
  les-service/
 Created-By: Maven Integration for Eclipse

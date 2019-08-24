@@ -10,7 +10,28 @@ public class AttendanceRequest implements Serializable {
 	private String totaltime;
 	private String date;
 	private String attendid;
+	private String status;
+	private String extratime;
+	private String laggingtime;
 	
+	public String getExtratime() {
+		return extratime;
+	}
+	public void setExtratime(String extratime) {
+		this.extratime = extratime;
+	}
+	public String getLaggingtime() {
+		return laggingtime;
+	}
+	public void setLaggingtime(String laggingtime) {
+		this.laggingtime = laggingtime;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	
 	public String getEmpid() {
 		return empid;
@@ -18,8 +39,6 @@ public class AttendanceRequest implements Serializable {
 	public void setEmpid(String empid) {
 		this.empid = empid;
 	}
-
-	
 	
 	public String getCheckin() {
 		return checkin;

@@ -1,3 +1,4 @@
+
 package org.orgw.simples.core.exception;
 
 public class BaseException extends Exception{

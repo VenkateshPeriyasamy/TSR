@@ -8,7 +8,7 @@ import org.orgw.simples.repository.model.Users;
 
 public interface ITestRepository extends DataRepository<Users> {
 
-	Users getbyEmpname(String employeId) throws BaseException;
+	Users getbyEmpname(String empid) throws BaseException;
 	
 	
 }

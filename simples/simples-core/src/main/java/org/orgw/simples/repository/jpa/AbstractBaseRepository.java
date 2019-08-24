@@ -16,6 +16,7 @@ import org.springframework.stereotype.Repository;
 
 import org.orgw.simples.repository.DataRepository;
 import org.orgw.simples.repository.model.EmailDetails;
+import org.orgw.simples.repository.model.Profile;
 
 import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 
@@ -102,4 +103,6 @@ public abstract class AbstractBaseRepository<M> implements DataRepository<M> {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 }

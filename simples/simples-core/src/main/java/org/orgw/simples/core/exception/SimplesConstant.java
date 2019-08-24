@@ -4,7 +4,7 @@ public enum SimplesConstant {
 	OK("SUCCESS"),
 	KO("FAILURE"),
 	WRONG("SOMETHING WENT WRONG!!"),
-	TECH_ERROR("TECHNICAL ERROR"),
+	TECH_ERROR("TECHNICAL ERROR"), 
 	CODE_0("0"),
 	CODE_1("1"),
 	CODE_2("2"),

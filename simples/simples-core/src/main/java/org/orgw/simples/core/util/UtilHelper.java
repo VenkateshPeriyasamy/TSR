@@ -5,6 +5,7 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -40,6 +41,22 @@ public class UtilHelper {
 			e.printStackTrace();
 		}
 		return time;
+	}
+	
+	public static String getmodifileddate(String date) {
+		
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		Calendar c=Calendar.getInstance();
+		try {
+			c.setTime(sdf.parse(date));
+		}catch(ParseException e){
+			e.printStackTrace();
+		 }
+		c.add(Calendar.DAY_OF_MONTH, -7);  
+		String olddate = sdf.format(c.getTime());
+		
+		return olddate;
 	}
 	
 	public static Boolean isEqual(String value1,String value2){
